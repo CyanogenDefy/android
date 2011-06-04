@@ -8,6 +8,10 @@ repo init -u git://github.com/CyanogenDefy/android.git -b gingerbread
 
 repo sync
 
+Get extra components:
+=====================
+
+cd vendor/cyanogen && ./get-rommanager
 
 Build:
 ======
