@@ -1,0 +1,2400 @@
+# repo forall -p -c 'git log -n 1 --format=email' > android/defy-cm7-rc0.heads.txt
+
+
+project android/
+From 3af0a7bffd12c277943f24273a8460cdf9eb8a80 Mon Sep 17 00:00:00 2001
+From: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+Date: Fri, 3 Jun 2011 18:13:33 +0200
+Subject: [PATCH] use git http protocol for korg
+
+
+project bionic/
+From f154ae4c09cb76a6378305a097fe4c10124422ee Mon Sep 17 00:00:00 2001
+From: Jim Huang <jserv@0xlab.org>
+Date: Thu, 2 Jun 2011 00:08:55 +0200
+Subject: [PATCH] bionic: Add ARM optimized strcmp()
+
+Reference results of the experiments on TI OMAP3430 at 600 MHz
+
+$ bench_strcmp -N "strcmp_1k" -s 1k -I 200
+
+[original C code]
+             prc thr   usecs/call      samples   errors cnt/samp     size
+strcmp_1k      1   1     10.38000          102        0    15000     1024
+
+[ARM optimized code]
+             prc thr   usecs/call      samples   errors cnt/samp     size
+strcmp_1k      1   1      3.08840           88        0    15000     1024
+
+The work was derived from ARM Ltd, contributed to newlib, and reworked
+for Android by Linaro.
+
+Change-Id: Ib0d5755e1eb9adb07d80ef0252f57a5c4c57a425
+Signed-off-by: Jim Huang <jserv@0xlab.org>
+
+project bootable/bootloader/legacy/
+From d3271024770ddcc2fb87dd22f8280764545ab05a Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Thu, 13 May 2010 14:32:11 -0700
+Subject: [PATCH] merge from open-source master
+
+Change-Id: Id96727850237dd454ca30090a27b67ba4f75f881
+
+project bootable/diskinstaller/
+From 53bd9111b5ae1fc1180ec13755d9830f7cadacf5 Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Mon, 10 May 2010 11:02:37 -0700
+Subject: [PATCH] merge from open-source master
+
+Change-Id: I28be55e2d649c8d52ad7ed47c5a19221a886ae7b
+
+project bootable/recovery/
+From f64f44cd1e09662c10081534b45ec2d38131172d Mon Sep 17 00:00:00 2001
+From: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+Date: Fri, 3 Jun 2011 05:11:26 +0200
+Subject: [PATCH] Merge remote-tracking branch 'remotes/cyanogen/gingerbread'
+ into gingerbread
+
+
+project build/
+From 9fb461899bf7da910fff73f6e99bd81c0cae2ca9 Mon Sep 17 00:00:00 2001
+From: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+Date: Fri, 3 Jun 2011 05:08:39 +0200
+Subject: [PATCH] Merge remote-tracking branch 'remotes/cyanogen/gingerbread'
+ into gingerbread
+
+
+project dalvik/
+From 2cf2aef70e854e762fb58b3548739398787f78a5 Mon Sep 17 00:00:00 2001
+From: Tanguy <tanguy.pruvot@gmail.com>
+Date: Thu, 2 Jun 2011 15:05:08 +0200
+Subject: [PATCH] Csaba Miklos: dvmGetThreadName can return NULL, in this case
+ the whole dalvik collapses.
+
+
+project development/
+From a079acbcee4c04cf9043609a6ae7a71ddf78c194 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sat, 30 Apr 2011 02:17:46 -0400
+Subject: [PATCH] Merge branch 'gingerbread' of
+ git://android.git.kernel.org/platform/development into HEAD
+
+
+project device/advent/vega/
+From ccc3bc554de618f69c58fbc78d5dc4ca70162eba Mon Sep 17 00:00:00 2001
+From: FUKAUMI Naoki <naobsd@gmail.com>
+Date: Sun, 15 May 2011 06:51:15 +0900
+Subject: [PATCH] vega: fix market FC on purchase
+
+remove problematic values from overlay (use default values)
+remove old "market fix"
+
+Change-Id: Id2c4207358faacc54cebbe6176f1db3d6bab69fd
+
+project device/bn/encore/
+From 05f7f75f079081c593fdb23182b99e12d247edf4 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 3 Jun 2011 06:38:17 +0400
+Subject: [PATCH] Merge "Remove screen on animation" into gingerbread
+
+
+project device/common/
+From c491cd697e4bc16a52e3b1d254e4151ee3aad8bf Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Wed, 30 Mar 2011 08:28:30 -0700
+Subject: [PATCH] Add crespo4g.
+
+Change-Id: I4ff1f3d182dce9d00553c6e14f77f50ca098f219
+
+project device/commtiva/z71/
+From 60c1bc61c92270f400d3b3d5395e8443a1a95d0f Mon Sep 17 00:00:00 2001
+From: Ricardo Cerqueira <cyanogenmod@cerqueira.org>
+Date: Mon, 23 May 2011 10:56:26 +0100
+Subject: [PATCH] Updated prebuilt kernel
+
+Disable headset inputdev switch events
+
+Change-Id: Id906074719231154c3a2932098f4db07e8df479d
+
+project device/dell/streak7/
+From 79c4e3030aa378c37afd28231780e4857181bdf8 Mon Sep 17 00:00:00 2001
+From: Koushik Dutta <koushd@gmail.com>
+Date: Sat, 19 Mar 2011 01:14:03 -0700
+Subject: [PATCH] initial
+
+
+project device/elocity/a7/
+From a924d58ea2e5f635357fcfeb5150b6ad489c93c0 Mon Sep 17 00:00:00 2001
+From: Koushik Dutta <koushd@gmail.com>
+Date: Sat, 12 Mar 2011 14:33:56 -0800
+Subject: [PATCH] initial commit
+
+
+project device/geeksphone/one/
+From 21222b7545e2c8808708d63b1398bcfffc1fb206 Mon Sep 17 00:00:00 2001
+From: Ricardo Cerqueira <cyanogenmod@cerqueira.org>
+Date: Sat, 30 Apr 2011 21:40:15 +0100
+Subject: [PATCH] Fix 2.3.4 USB switch
+
+Change-Id: Ia6af4779dfe11a5c178e487fbc899405f39a0a1c
+
+project device/geeksphone/zero/
+From 9d9a5c0908af4245ec505e27374498993fb81caa Mon Sep 17 00:00:00 2001
+From: Ricardo Cerqueira <cyanogenmod@cerqueira.org>
+Date: Mon, 23 May 2011 10:56:00 +0100
+Subject: [PATCH] Updated prebuilt kernel
+
+Disable headset inputdev switch events
+
+Change-Id: I5114a13882db52ebda3c9394d8dfc7ac08606b90
+
+project device/htc/ace/
+From fade1bb22984486899459c3ee401620abf7c5a70 Mon Sep 17 00:00:00 2001
+From: Giulio Cervera <giulio.cervera@gmail.com>
+Date: Wed, 1 Jun 2011 00:20:23 +0200
+Subject: [PATCH] ace: isl29028: allow ps_kadc write to other
+
+Change-Id: Ia8d3bc20b810adcce03fa657d67fa45676a08107
+
+project device/htc/bravo/
+From 6a3066b2f0a41a02b298938c8a569a2a2ab28717 Mon Sep 17 00:00:00 2001
+From: Giulio Cervera <giulio.cervera@gmail.com>
+Date: Sat, 28 May 2011 10:21:48 +0200
+Subject: [PATCH] bravo: Support for Webkit acceleration
+
+Change-Id: Id222235a05750493eae02872d7e175dd8459bacc
+
+project device/htc/bravoc/
+From 812c5887470a6145e382c10caa9039b65ced46ac Mon Sep 17 00:00:00 2001
+From: Giulio Cervera <giulio.cervera@gmail.com>
+Date: Sat, 28 May 2011 10:22:25 +0200
+Subject: [PATCH] bravoc: Support for Webkit acceleration
+
+Change-Id: I3b8c834251551af415d2d35d9e7362e3b1fa18df
+
+project device/htc/buzz/
+From 23f35a342a043dc79b8ae07116a6219e60d03c79 Mon Sep 17 00:00:00 2001
+From: Arne Coucheron <arco68@gmail.com>
+Date: Mon, 30 May 2011 07:35:09 +0200
+Subject: [PATCH] buzz: Update prebuilt recovery kernel
+
+Switched from smartass to ondemand governor, and lowered min. frequency
+to avoid that the phone runs at full speed while offmode charging
+
+Change-Id: Ic61df925919603ccac078ef321bc78745fb0cfc9
+
+project device/htc/click/
+From c5568a5383638cbff08f04228e8f873b2c867542 Mon Sep 17 00:00:00 2001
+From: KalimochoAz <calimochoazucarado@gmail.com>
+Date: Mon, 30 May 2011 09:48:11 +0200
+Subject: [PATCH] Kernel and wifi updates for click stability
+
+Change-Id: I96bcd04052e0bdceeded8dbce85dc8b52100817e
+
+project device/htc/common/
+From 1e9c91933bd0c2c9bb007cceaf640568a4b9432e Mon Sep 17 00:00:00 2001
+From: Koushik Dutta <koushd@gmail.com>
+Date: Sun, 19 Dec 2010 03:54:35 -0800
+Subject: [PATCH] fix build
+
+Change-Id: Icfeb4ec4c171db60943ba857bdb03940a6c5379c
+
+project device/htc/desirec/
+From 65d4541b777e44629f7d9df7b6b6126e7bb1eb7c Mon Sep 17 00:00:00 2001
+From: workshed64 <stupiddaddy@gmail.com>
+Date: Sat, 7 May 2011 13:49:49 -0400
+Subject: [PATCH] Eris: Update for per-interface DHCP support
+
+Change-Id: I4ef5229443e973c08221a99d7b9c3f6fae6474b8
+
+project device/htc/dream_sapphire/
+From 76001b2fc591d41db70c6ce61ab4554b09a1f308 Mon Sep 17 00:00:00 2001
+From: Firerat <firer4t@googlemail.com>
+Date: Fri, 20 May 2011 14:21:24 +0100
+Subject: [PATCH] Updated dhcpcd service for 2.3.4
+
+Change-Id: Idbc15fc70152207971fabda0297fd8a32ead8faf
+
+project device/htc/espresso/
+From 5d07b7bcbb3fda6f506eae9463bbf72bc0e45a3c Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Thu, 26 May 2011 02:19:34 -0400
+Subject: [PATCH] espresso: Add iprenew service
+
+Change-Id: I3ea0e2516b7b821c130d5dab93d35dbac36c4af0
+
+project device/htc/glacier/
+From 16d901d57f3950195768dc68d4c4e7539dbc53f8 Mon Sep 17 00:00:00 2001
+From: Keyan Mobli <persiansown@gmail.com>
+Date: Sat, 14 May 2011 01:58:10 -0500
+Subject: [PATCH] Update to Gingerbread kineto
+
+Change-Id: I2b8b38e7b2b0d51fa2e5f7d9afe282964b10b79e
+
+project device/htc/hero/
+From 005a8ad94b8a16349d9f7289f1532ae163e33b87 Mon Sep 17 00:00:00 2001
+From: Esa Laukkanen <ele.linux@gmail.com>
+Date: Thu, 26 May 2011 21:44:49 +0200
+Subject: [PATCH] hero: Updated prebuilt kernel ,fix for vpn
+
+Change-Id: I4c2b600e24990800020304fe7b6863ed15451288
+
+project device/htc/heroc/
+From 0f0a16403446f61c1759118d59ad421fb53bfd75 Mon Sep 17 00:00:00 2001
+From: Jordan Patterson <jordanp@gmail.com>
+Date: Mon, 16 May 2011 09:54:42 -0600
+Subject: [PATCH] Merge fix for PduParser.java - Part 3
+
+Missed heroc and speedy commits.  These shouldn't be necessary with the
+fixed PduParser.java
+
+Change-Id: I853c0f6ef1c040c1d2dd553df177e01967d952d3
+
+project device/htc/inc/
+From c29dbe0b2cd28861c5bb717e9082b3c46512e9e2 Mon Sep 17 00:00:00 2001
+From: Josh Stone <cuviper@gmail.com>
+Date: Tue, 31 May 2011 10:07:14 -0700
+Subject: [PATCH] INC: update prebuilt kernel
+
+- Adds USB accessory support.
+- Updates other generic cm-kernel changes.
+
+Change-Id: I36d794e8fbbd4fb780ce2a6b390bb1315eaf2024
+
+project device/htc/incs/
+From 1119ce1ae741a071dcb2ff249a2de51b78b6f671 Mon Sep 17 00:00:00 2001
+From: Koushik Dutta <koushd@gmail.com>
+Date: Fri, 22 Apr 2011 15:45:49 -0700
+Subject: [PATCH] initial comit
+
+
+project device/htc/legend/
+From 52fb9b4888bc6961eba079d5fa4065c161468b06 Mon Sep 17 00:00:00 2001
+From: Alexander Hofbauer <alex@derhofbauer.at>
+Date: Mon, 23 May 2011 10:50:11 +0200
+Subject: [PATCH] Add dhcp renewal service for tiwlan0 and use
+ /proc/calibration in AP mode
+
+Change-Id: I27d27dfc794d574d8d26e42fe7e421168befdeca
+
+project device/htc/leo/
+From 8044589cc2048b68bc90293c2a8beed90a8bcefc Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 20 May 2011 09:39:47 +0400
+Subject: [PATCH] Merge "leo: add postrecoveryboot to change recovery.fstab"
+ into gingerbread
+
+
+project device/htc/liberty/
+From 1f2ff0d13283b7103374988d2762d57659d04262 Mon Sep 17 00:00:00 2001
+From: attn1 <attn1.repo@gmail.com>
+Date: Thu, 2 Jun 2011 23:20:13 -0400
+Subject: [PATCH] Update prebuilt kernel & wifi module
+
+Change-Id: I093d75b670cdf38f82308313b6fe14ac14c07be0
+
+project device/htc/mecha/
+From 0a9b8e111e3a52dca0946724abfffbec6566f741 Mon Sep 17 00:00:00 2001
+From: Tony Layher <layhertony@gmail.com>
+Date: Thu, 2 Jun 2011 23:59:44 -0400
+Subject: [PATCH] Mecha update Boardconfig.
+
+Adds extra sys props
+Adds the non standard rmnet_sdio interface
+
+Change-Id: I0c1d302182bd40c2c0e59fc823c7c9a79d21674c
+
+project device/htc/msm7x30-common/
+From 20951a0175379fb031fe38c55c3934c0d5b9d198 Mon Sep 17 00:00:00 2001
+From: Giulio Cervera <giulio.cervera@gmail.com>
+Date: Tue, 17 May 2011 11:31:49 +0200
+Subject: [PATCH] msm7x30-common: add sip permission
+
+Change-Id: Iecf476c647e92e4313d987318493bca19be463dd
+
+project device/htc/passion/
+From b04840992c74e9065993d62567bf6c260fdc6cd2 Mon Sep 17 00:00:00 2001
+From: Irfan Sheriff <isheriff@google.com>
+Date: Mon, 7 Mar 2011 16:51:31 -0800
+Subject: [PATCH] DO NOT MERGE update for per interface dhcp support
+
+Bug: 4022070
+Change-Id: Ie26b438620c5ea720060fc93e1bab46947cd20e5
+
+project device/htc/passion-common/
+From 8e535cdfdd6fea9b4dcac2e597e82c0c4278e561 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sat, 30 Apr 2011 04:30:58 -0400
+Subject: [PATCH] passion: Update prebuilt kernel and modules
+
+Change-Id: I97d618798fc62809fb111370916e0d442f4d7c6c
+
+project device/htc/saga/
+From e9eabccc22db25bc6bd6f9ccc5fa356469060503 Mon Sep 17 00:00:00 2001
+From: hcdrjacob <hcdrjacob@giovanni.(none)>
+Date: Sat, 23 Apr 2011 07:08:41 +0800
+Subject: [PATCH] Add BOARD_HAS_LARGE_FILESYSTEM := true
+
+
+project device/htc/speedy/
+From 414e558d91cbab29e60beea148b9991839a29f06 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 3 Jun 2011 06:36:39 +0400
+Subject: [PATCH] Merge "speedy: update kernel and modules" into gingerbread
+
+
+project device/htc/supersonic/
+From ea00bc58d71b7f668acc588cb8c8d4f47e52340f Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Mon, 23 May 2011 20:56:31 -0400
+Subject: [PATCH] supersonic: Add iprenew support
+
+Change-Id: I0e1e7eec0344ad7b88ac96dac275e700daea9f8c
+
+project device/htc/vision/
+From 4bb26c9150073296e15029ddce5e73dc86d04c52 Mon Sep 17 00:00:00 2001
+From: Giulio Cervera <giulio.cervera@gmail.com>
+Date: Tue, 31 May 2011 23:09:42 +0200
+Subject: [PATCH] vision: update prebuilt kernel
+
+Change-Id: Ic1dade00a3a0db058eb79b9d09a06ae9c17845fa
+
+project device/huawei/ascend/
+From c89763ba40dcea71691efd960bb4521b3b4f284c Mon Sep 17 00:00:00 2001
+From: Koushik Dutta <koushd@gmail.com>
+Date: Wed, 26 Jan 2011 01:25:06 -0800
+Subject: [PATCH] recovery.fstab
+
+Change-Id: I81de71d02bdd8640cad39fa70fa57673151a08bc
+
+project device/huawei/ideos/
+From e58dce7bb9bd9a400b515d9a3c37aaba99893fab Mon Sep 17 00:00:00 2001
+From: Koushik Dutta <koushd@gmail.com>
+Date: Mon, 4 Apr 2011 20:17:08 -0700
+Subject: [PATCH] fix
+
+Change-Id: Ibc488eb300d8b1dcd5add4276b4a3daeaa60d70f
+
+project device/huawei/u8220/
+From ad6a51ccd75defe115a14985caf7e6f9e0676eb6 Mon Sep 17 00:00:00 2001
+From: Tom Giordano <tomgiordano83@gmail.com>
+Date: Mon, 9 May 2011 07:44:03 +1000
+Subject: [PATCH] Merge branch 'gingerbread' of
+ github.com:TomGiordano/android_device_huawei_u8220 into
+ gingerbread
+
+Conflicts:
+	libaudio/AudioHardware.cpp
+
+project device/lge/p990/
+From f934b20dedd91343ab704fee757af1f97d3eba65 Mon Sep 17 00:00:00 2001
+From: Ricardo Cerqueira <cyanogenmod@cerqueira.org>
+Date: Fri, 3 Jun 2011 01:14:26 +0100
+Subject: [PATCH] p990: Update prebuilt kernel
+
+Change-Id: I64069f56c08fe1b14d8aaf216704e6f244c5d3b2
+
+project device/lge/p999/
+From 506a543b2dcdbd078d0ad001840959d07cfe4cb6 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Thu, 2 Jun 2011 15:29:30 -0400
+Subject: [PATCH] p999: Update prebuilt kernel and modules
+
+
+project device/lge/star-common/
+From c7a5ef017d7ded3ab7f0bb65c0054759d7a084ef Mon Sep 17 00:00:00 2001
+From: Ricardo Cerqueira <cyanogenmod@cerqueira.org>
+Date: Tue, 31 May 2011 14:57:37 +0100
+Subject: [PATCH] Updated prebuilt rild
+
+SERVICE_LINE is apparently a p990-only thing
+
+Change-Id: I836de8dc691c441c638d13e93ce101b3fff3d376
+
+project device/lge/thunderg/
+From dc507b8ba38ba0e40a6b95ed64193157c68bad94 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Thu, 28 Apr 2011 01:36:24 -0400
+Subject: [PATCH] Stop breaking my build.
+
+Change-Id: If950ac38cf82c9f748bd7e3cf2188bfcd37abd50
+
+project device/malata/smb-common/
+From 452687b8b2cfbad4ac89c27746ad6fac58d58cc2 Mon Sep 17 00:00:00 2001
+From: Brint E. Kriebel <github@bekit.net>
+Date: Fri, 6 May 2011 13:33:06 -0700
+Subject: [PATCH] smb-common: update settings for market access
+
+
+project device/malata/smb_a1002/
+From f087beb40a66c2eeaf66df2647c0d3c26f0268db Mon Sep 17 00:00:00 2001
+From: Brint E. Kriebel <github@bekit.net>
+Date: Fri, 6 May 2011 14:42:01 -0700
+Subject: [PATCH] smb_a1002: update settings for market access
+
+Change-Id: I4e720c55f10f286eb7fe0e6b2f80330b85a49275
+
+project device/malata/smb_a1004/
+From bde1bfca0339810c286046070939628f06652cb4 Mon Sep 17 00:00:00 2001
+From: Ricardo Cerqueira <github@cerqueira.org>
+Date: Tue, 31 May 2011 22:59:18 +0100
+Subject: [PATCH] smb_a1004: Redo device repo to use new shared smb-common
+
+
+project device/malata/smb_a1011/
+From fba21bb954814d705e2e2a2b5475e1271b5408dd Mon Sep 17 00:00:00 2001
+From: Ricardo Cerqueira <github@cerqueira.org>
+Date: Tue, 31 May 2011 23:14:14 +0100
+Subject: [PATCH] Remove camera-related definitions
+
+This device has no camera at all
+
+project device/malata/smb_b9701/
+From 7ec494d1459242dc80e8b650d347b44b0251512b Mon Sep 17 00:00:00 2001
+From: Brint E. Kriebel <github@bekit.net>
+Date: Fri, 6 May 2011 14:43:27 -0700
+Subject: [PATCH] smb_b9701: update settings for market access
+
+
+project device/motorola/jordan/
+From 86d197aade3d52be6f4527ac615bcb6afe9b5c51 Mon Sep 17 00:00:00 2001
+From: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+Date: Sat, 4 Jun 2011 00:30:17 +0200
+Subject: [PATCH] fix download from market
+
+
+project device/motorola/morrison/
+From 0c005a169d7ac4fd69d945affea7d0965b0f06ec Mon Sep 17 00:00:00 2001
+From: Dane Wagner <dane.wagner@gmail.com>
+Date: Thu, 2 Jun 2011 17:23:57 -0500
+Subject: [PATCH] Make shell scripts executable
+
+Change-Id: I481950991a1a8ff52e5a1f7499d6718973102e6a
+
+project device/motorola/sholes/
+From b0e6d74bb536ae626d778bcdf2768e547d7fbddd Mon Sep 17 00:00:00 2001
+From: Matt Rinsch <gfunkmonk@gmail.com>
+Date: Thu, 2 Jun 2011 09:45:19 -0400
+Subject: [PATCH] kernel & modules
+
+
+project device/motorola/stingray/
+From 0485cda88a0670e3c877dca4ffc6cbf539a4b6f3 Mon Sep 17 00:00:00 2001
+From: Koushik Dutta <koushd@gmail.com>
+Date: Sat, 16 Apr 2011 13:16:01 -0700
+Subject: [PATCH] switch up sdcard to actually look on the sd card. need to
+ fix up the boot kernel to switch the sdcard mounts around.
+
+Change-Id: I7e7615156fe8c3f194cd9aa5ffe07f215d65748c
+
+project device/motorola/zeppelin/
+From f56423b64015b870d50444a99f4e3cc15a90ad43 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Emilio=20L=C3=B3pez?= <turl@tuxfamily.org>
+Date: Mon, 30 May 2011 20:14:28 +0000
+Subject: [PATCH] Revert "zeppelin: reduce kPreviewBufferCount to 2"
+
+This reverts commit b0d38018f1f8b7ec66ce45f98afbc36aa6c06367.
+
+project device/sample/
+From 3f6a489c7262c3a93f287ce58ea504cb92ada9bf Mon Sep 17 00:00:00 2001
+From: Dan Morrill <morrildl@google.com>
+Date: Tue, 15 Feb 2011 15:42:22 -0800
+Subject: [PATCH] Adding a file to hold the com.nxp.mifare feature related to
+ NFC.
+
+Change-Id: Ic9bfdac3d1edf0741c26168c7c76e06adc8a4adb
+
+project device/samsung/aries-common/
+From bb0592656268a3c6db62c0c13ec517ac9854039e Mon Sep 17 00:00:00 2001
+From: codeworkx <daniel.hillenbrand@codeworkx.de>
+Date: Tue, 31 May 2011 16:26:45 +0200
+Subject: [PATCH] libaudio: added support for fmradio
+
+Change-Id: I859f06768e8cb3e60cadc17346b72952feffba09
+
+project device/samsung/captivatemtd/
+From b4e5abc24ebd6a2d93d821c4a8b38588a9501887 Mon Sep 17 00:00:00 2001
+From: atinm <atinm.dev@gmail.com>
+Date: Thu, 2 Jun 2011 21:53:59 -0400
+Subject: [PATCH] Updated kernel for backlight timer shutoff
+
+Change-Id: Ibb13440d9c4726e5211fda0dca67bd6204ccfff1
+
+project device/samsung/crespo/
+From e18ae6beda6ded9c59ab136be682842abbe05edd Mon Sep 17 00:00:00 2001
+From: Koushik Dutta <koushd@gmail.com>
+Date: Tue, 17 May 2011 16:31:33 -0700
+Subject: [PATCH] Merge branch 'gingerbread' of
+ git://github.com/CyanogenMod/android_device_samsung_crespo
+ into gingerbread
+
+
+project device/samsung/crespo4g/
+From 9c44f888ab22c8f433903c347b9a5515540df65f Mon Sep 17 00:00:00 2001
+From: Brandon Bennett <bennetb@gmail.com>
+Date: Fri, 20 May 2011 09:14:03 -0600
+Subject: [PATCH] Fix accelerometer
+
+crespo4g/device-vendor-blobs.mk was not being called during the build so the
+libakm.so was not being properly included.
+
+Change-Id: I0ed385ca2e4e96518fe68db8c75c8e8415145359
+
+project device/samsung/epic4g/
+From d690307b82634032fa13de6936aa8e6f3192e563 Mon Sep 17 00:00:00 2001
+From: Koushik Dutta <koushd@gmail.com>
+Date: Sat, 19 Mar 2011 01:13:09 -0700
+Subject: [PATCH] initial
+
+
+project device/samsung/fascinate/
+From c5abaeca4985e6f8cdbb573b37166ee4ecf9f6d7 Mon Sep 17 00:00:00 2001
+From: jt1134 <jt1134@gmail.com>
+Date: Sun, 27 Feb 2011 17:08:33 -0800
+Subject: [PATCH] specify correct ums lunfile for fascinate
+
+
+project device/samsung/galaxys4g/
+From 4a8a81564f1ed82575a63cc652f170f90a76a8da Mon Sep 17 00:00:00 2001
+From: Koushik Dutta <koushd@gmail.com>
+Date: Mon, 30 May 2011 16:41:07 -0700
+Subject: [PATCH] sgs4g
+
+Change-Id: I76165e6684b089cb8b0c9e081c406b85e62188e6
+
+project device/samsung/galaxysmtd/
+From f2176e4864f20ca0d0ef7c4f4afdb30db13fd613 Mon Sep 17 00:00:00 2001
+From: atinm <atinm.dev@gmail.com>
+Date: Thu, 2 Jun 2011 21:54:04 -0400
+Subject: [PATCH] Updated kernel for backlight timer shutoff
+
+Change-Id: Iefec45e2c026c8438f6fed0a1f0e0d2140015967
+
+project device/samsung/vibrantmtd/
+From d4adb046789b8e5749378c3d862fb6d2f5f120ae Mon Sep 17 00:00:00 2001
+From: atinm <atinm.dev@gmail.com>
+Date: Thu, 2 Jun 2011 21:54:08 -0400
+Subject: [PATCH] Updated kernel for backlight timer shutoff
+
+Change-Id: I03eb661f4527b187593c042c40b930fbe583f977
+
+project device/samsung/vzwtab/
+From 9a3257cad67072ab5357a149dc0405d20d3651b0 Mon Sep 17 00:00:00 2001
+From: Khas'Mek <Boushh@gmail.com>
+Date: Thu, 12 May 2011 10:41:52 -0700
+Subject: [PATCH] Janky Backbuffer = True
+
+
+project device/zte/blade/
+From c698c62cd24fc939e980db282c6af96eadb625e9 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 3 Jun 2011 06:34:29 +0400
+Subject: [PATCH] Merge "blade: update wifi firmware and module." into
+ gingerbread
+
+
+project external/DroidSSHd/
+From 64fd98b34ad5c2cca37de019188d8b3196455850 Mon Sep 17 00:00:00 2001
+From: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+Date: Fri, 3 Jun 2011 21:28:35 +0200
+Subject: [PATCH] unregister boot_complete broadcast receiver
+
+
+project external/alsa-lib/
+From a10f7f066bc40432ed2b682439ec2c0df8d7a4da Mon Sep 17 00:00:00 2001
+From: fattire <fattire@indirect.com>
+Date: Sun, 20 Mar 2011 01:59:22 -0700
+Subject: [PATCH] Fix Alsa UCM to build under Android
+
+Change-Id: Ib99a3db496eaade14bed56698721ec2acf1b2d81
+
+project external/alsa-utils/
+From b55aebde11e8b9ea95a61859a8a7d2f7c7681a52 Mon Sep 17 00:00:00 2001
+From: fattire <fattire@indirect.com>
+Date: Sun, 20 Mar 2011 02:15:12 -0700
+Subject: [PATCH] build alsa_ucm.  UCM is the nwe use case manager.
+
+Change-Id: I2cffafd4008c91195f4e7bf2072421f3d6752eae
+
+project external/apache-http/
+From b91c5e936342afbdd58c88ac604d5dd505d0fe0c Mon Sep 17 00:00:00 2001
+From: Brian Carlstrom <bdc@google.com>
+Date: Sun, 2 Jan 2011 16:19:22 -0800
+Subject: [PATCH] DefaultRequestDirector should ignore IOExceptions from stale
+ connections
+
+The DefaultRequestDirector was letting IOExceptions from closing stale
+connections affect new requests. However, it was very common to
+received "SSL shutdown failed" exceptions in this case, since an SSL
+"close notify" message could not be sent. Now these and other
+IOExceptions are ignored so the request can continue with a new
+socket.
+
+Bug: 3405962
+Bug: 3317717
+git cherry-pick -e 843bcb6f4f65c0cdca327c6467813b88c52042f3
+
+Change-Id: I443b4915f6473e07d74a37377dade6ac1f9f600c
+
+project external/astl/
+From c3c760978c34d5eeea1205c0bf7f27444e192a98 Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 16 Jul 2010 11:41:34 -0700
+Subject: [PATCH] add meta-files about 3rd party projects
+
+Change-Id: I5630c16f04c376ca619055f268eee47fd57a23a8
+
+project external/bash/
+From 744878f09637fad57e28c5eb5e277cdb50b26485 Mon Sep 17 00:00:00 2001
+From: Scott Anderson <camel@droidmod.org>
+Date: Wed, 9 Feb 2011 11:06:30 -0500
+Subject: [PATCH] Add sysro and sysrw aliases
+
+Change-Id: If7507e41c5f67e19b5f2879a3b3896678e1fadf2
+
+project external/bison/
+From 889df9c1efa7ca5de113407ab7793b57a6db677d Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:16 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: Id2f90da2d2b7723e052d05c0469ca8277b1b739c
+
+project external/blktrace/
+From ac4461c3b3e7bcbafe5336b9478657d0fa3e08aa Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 16 Jul 2010 11:41:34 -0700
+Subject: [PATCH] add meta-files about 3rd party projects
+
+Change-Id: I8c4043d5f1cda9b0faf9ec1a4a7da9efcc985fa3
+
+project external/bluetooth/bluez/
+From 3bbbd17817d638ea76055da5c4b0dbe2abb58440 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sat, 30 Apr 2011 02:52:34 -0400
+Subject: [PATCH] Merge branch 'gingerbread' of
+ git://android.git.kernel.org/platform/external/bluetooth/bluez
+ into HEAD
+
+
+project external/bluetooth/glib/
+From 0c01eb3a7313a580fe34044bcdc3337d067c8a15 Mon Sep 17 00:00:00 2001
+From: Jaikumar Ganesh <jaikumar@google.com>
+Date: Fri, 27 Aug 2010 19:47:52 -0700
+Subject: [PATCH] DO NOT MERGE Reverse meaning of ANDROID_STUB C flag.
+
+Also add defaults so that bluetoothd doesn't crash.
+
+Change-Id: I263cfecff6889ce0530b31b98277df04dd270fb5
+
+project external/bluetooth/hcidump/
+From ce36a6c7c5f8043c038415d8e270d55d9834008d Mon Sep 17 00:00:00 2001
+From: Jaikumar Ganesh <jaikumar@google.com>
+Date: Tue, 1 Jun 2010 19:19:39 -0700
+Subject: [PATCH] Update include paths for Bluez.
+
+Change-Id: I34a875feb37bc9574d95584bd741eaffc6247b66
+
+project external/bouncycastle/
+From 3ab12958718f17e48e2816a84d403f6305cc2800 Mon Sep 17 00:00:00 2001
+From: Brian Carlstrom <bdc@google.com>
+Date: Wed, 23 Mar 2011 16:43:51 -0700
+Subject: [PATCH] Add Chrome-style certificate blacklist to CertPathValidator
+ DO NOT MERGE
+
+Based on Chrome's CLs to blacklist the malformed certificates from
+Comodo's recent fraud incident.
+  http://src.chromium.org/viewvc/chrome?view=rev&revision=78478
+  http://src.chromium.org/viewvc/chrome?view=rev&revision=78748
+  http://src.chromium.org/viewvc/chrome?view=rev&revision=78869
+
+Bug: 4165439
+git cherry-pick -e 34c261b1a00029744cfb7de1a69dca4b3ffb51a1
+
+Change-Id: Ib756d920b30c7b203dd1607bcad46b0eaced1551
+
+project external/bsdiff/
+From df980d633fd0bdc0b89af26630f543d91bb87e68 Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:18 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: I3944d75f64a31479d843116c69a4b1a6ad96b73b
+
+project external/busybox/
+From 47be100253dfdaea980d9ed736c162caceff0c79 Mon Sep 17 00:00:00 2001
+From: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+Date: Wed, 1 Jun 2011 22:26:11 +0200
+Subject: [PATCH] extend user/group names to 12 char. if terminal has more
+ than 88 cols \(or -w 88 is set\)
+
+Signed-off-by: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+
+project external/bzip2/
+From 879585bbef51b4cabaac6340a95d807dca379cdc Mon Sep 17 00:00:00 2001
+From: Nick Kralevich <nnk@google.com>
+Date: Tue, 21 Sep 2010 16:23:44 -0700
+Subject: [PATCH] am 701ad7cc: (-s ours) DO NOT MERGE cherry-picked
+ 172b266ed7845eac2edc7e7f8a72371356a9a277 from master
+
+Merge commit '701ad7cca713ec5054e420bde1b32b86d18ef08b' into gingerbread
+
+* commit '701ad7cca713ec5054e420bde1b32b86d18ef08b':
+  DO NOT MERGE cherry-picked 172b266ed7845eac2edc7e7f8a72371356a9a277 from master
+
+project external/chromium/
+From 5e43ad9465e402d595a3c960784b1effe2e9bd88 Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:19 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: I91bcff10e8ce25c9459ee8b7c225fad856e06671
+
+project external/clearsilver/
+From 7ae7d3b50bfdb03e2d1406578e4ed802757ad6b1 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Mon, 28 Feb 2011 21:04:55 -0500
+Subject: [PATCH] Merge branch 'gingerbread' of
+ git://android.git.kernel.org/platform/external/clearsilver
+ into 233-merge
+
+Conflicts:
+	cgi/Android.mk
+	cs/Android.mk
+	java-jni/Android.mk
+	util/Android.mk
+
+Change-Id: I9b295a9be5fa0f75872d153f0421aed96d14a5eb
+
+project external/compcache/
+From 5fdea2182e615432f615971d9353734fabf5ade0 Mon Sep 17 00:00:00 2001
+From: Tom Giordano <tomgiordano83@gmail.com>
+Date: Thu, 7 Apr 2011 19:25:09 +1000
+Subject: [PATCH] compcache: Add LOCAL_MODULE_TAGS
+
+Change-Id: I1bba626ede55279a4424833aa1c6a91ebf7a144a
+
+project external/dbus/
+From 4bda01d38f1ef164d76bb8e266caaabfd549ef9c Mon Sep 17 00:00:00 2001
+From: Havoc Pennington <hp@redhat.com>
+Date: Tue, 10 Jul 2007 16:00:44 +0000
+Subject: [PATCH] DO NOT MERGE: Fix crash in Dbus.
+
+Bug: 3189185
+Original change by: Havoc Pennington  <hp@redhat.com>
+
+* dbus/dbus-connection.c (struct DBusConnection): Fix from Olivier
+Hochreutiner to avoid trying to protect individual bits in a word
+with different locks (make dispatch_acquired and io_path_acquired
+dbus_bool_t rather than bitfields)
+
+Change-Id: Ic989fb880b02bcb02ad38292c40970b4c76afa44
+
+project external/dhcpcd/
+From 17fdc0dee1db0246a59cd3b28278389043fe5134 Mon Sep 17 00:00:00 2001
+From: Paul Stewart <pstew@google.com>
+Date: Fri, 25 Mar 2011 14:21:44 -0700
+Subject: [PATCH] dhcp: Remove errant extra ref (DO NOT MERGE) [bug: 4174566]
+
+Change-Id: If2e7a394c9ab65f7a8d69a4e7b240705204bd34c
+Signed-off-by: Dmitry Shmidt <dimitrysh@google.com>
+
+project external/dnsmasq/
+From 1b25960ebe33754410ba3c663c1c45662c779381 Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 16 Jul 2010 11:41:34 -0700
+Subject: [PATCH] add meta-files about 3rd party projects
+
+Change-Id: I84244ea72c1a603cc4342da13f67831dcd8eaf34
+
+project external/dropbear/
+From 94c28982c53bf25ec2bac4b48d9d30ee0d6b0a29 Mon Sep 17 00:00:00 2001
+From: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+Date: Wed, 1 Jun 2011 02:04:51 +0200
+Subject: [PATCH] set sftp-server path to /system/xbin
+
+
+project external/e2fsprogs/
+From 26c7f71ba042a41ebe3e6d4118fc7350311ca45d Mon Sep 17 00:00:00 2001
+From: Giulio Cervera <giulio.cervera@gmail.com>
+Date: Thu, 30 Dec 2010 12:47:24 +0100
+Subject: [PATCH] build e2label
+
+Change-Id: I089f5b0a6a294f15d9a7eac5f8cb6e938b823b00
+
+project external/easymock/
+From 17d5eb4006c438775d8eaa7600e947e4ac090a18 Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:21 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: I5c0ebfe560daff00f0b9ce2b53914070abc231d5
+
+project external/elfcopy/
+From 62c1bed1c4505369cac2e72fbe30452a598fb690 Mon Sep 17 00:00:00 2001
+From: Nick Kralevich <nnk@google.com>
+Date: Tue, 20 Apr 2010 11:17:57 -0700
+Subject: [PATCH] fix bug 2603717.  Ensure all elf program headers are copied.
+
+When stripping a binary, soslim calls adjust_elf.  adjust_elf
+copies over the elf program headers, making adjustments
+as necessary.  Under some circumstances, the code which loops
+over all the program headers will fail to call gelf_update_phdr().
+Instead of copying over the elf program header from the old
+binary to the new binary, a "NULL" header is written to the
+binary.
+
+Change-Id: I7afdc8e3af2638c386546f1bfe4f151e1f002087
+
+project external/elfutils/
+From 84cf4183ba6f577ee01abe7f1f5a6d4b23df35a8 Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 16 Jul 2010 11:41:34 -0700
+Subject: [PATCH] add meta-files about 3rd party projects
+
+Change-Id: I06ddc1734408f4d7180178254bf85de6a9703d6d
+
+project external/embunit/
+From f5eb8b0c9abf1e9911b5c84a555bc495651595e5 Mon Sep 17 00:00:00 2001
+From: Nick Kralevich <nnk@google.com>
+Date: Thu, 13 May 2010 15:00:32 -0700
+Subject: [PATCH] Get rid of warnings when compiled with -Wformat-security
+
+Change-Id: Ia671b74229001b02b2538a5d5f580532d7c88306
+
+project external/emma/
+From 4d37e21b7c2fa378dbf7cfe2ea57d7f5991fe6cd Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:22 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: I3859e128f1ce3d98eeb8bac4400231c792eb38f1
+
+project external/esd/
+From 224a67f2683a7ee997179fc5dd16115e39987b0f Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:23 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: I2c0523d0fd01c464fbcead8b73e5456b3dd25f9f
+
+project external/expat/
+From 204e2ef0e1a2c2da0087cccb0c9b618d52f1d584 Mon Sep 17 00:00:00 2001
+From: Jesse Wilson <jessewilson@google.com>
+Date: Thu, 16 Sep 2010 15:47:50 -0700
+Subject: [PATCH] Add optional tags to expat.
+
+Change-Id: I356154b04a356a51a532a691d918c497c421586b
+
+project external/fdlibm/
+From 26ea4299bba7c618fdf97624b39e33444410896d Mon Sep 17 00:00:00 2001
+From: Elliott Hughes <enh@google.com>
+Date: Tue, 24 Aug 2010 16:50:43 -0700
+Subject: [PATCH] Make the fdlibm.h header file hygienic.
+
+(I'm going to send this patch upstream.)
+
+Change-Id: I1281719ea6cc199f917919d39090cdfc90a05bf5
+
+project external/flac/
+From 84110cd94e840d42b7c43789e67f18da67d551b0 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sat, 29 Jan 2011 18:11:31 -0500
+Subject: [PATCH] libFLAC: Added LOCAL_MODULE_TAGS and removed prelink
+
+
+project external/freetype/
+From aacb8e1368a883fcbc9fe64fd0e460cef9c9b20c Mon Sep 17 00:00:00 2001
+From: Nick Kralevich <nnk@google.com>
+Date: Tue, 14 Sep 2010 17:02:58 -0700
+Subject: [PATCH] upgrade freetype to 2.4.2.
+
+Bug: 2969145
+
+Change-Id: I8debbbe0bd478d9cf8c39cff5179981b5f3b371a
+
+project external/fsck_msdos/
+From b6ee08aadb580341a4d80943741b80de16a88b5d Mon Sep 17 00:00:00 2001
+From: d.moskvitin@samsung.com <d.moskvitin@samsung.com>
+Date: Thu, 4 Nov 2010 15:35:36 -0400
+Subject: [PATCH] Integrate Samsung fsck_msdos fixes, including problem
+ seeking beyond 4 gig
+
+Change-Id: I8829a3a2c26625d7405fa0a43da1640ea5c9ffbc
+Signed-off-by: Mike Lockwood <lockwood@google.com>
+
+project external/genext2fs/
+From 28f10892a39db10b1c65125723d9737de865ef56 Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:25 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: I6dc02b4fd79f01d4c0d59b8e0d5259f81ef905b0
+
+project external/giflib/
+From b2597268aef084202a8c349d1cc072c03c6e22eb Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 16 Jul 2010 11:41:34 -0700
+Subject: [PATCH] add meta-files about 3rd party projects
+
+Change-Id: I86c6d96b3b031522203d0f6cda18190e45035520
+
+project external/grub/
+From a0be411871f2e71834a2cd75dea882d732557530 Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Mon, 10 May 2010 11:15:05 -0700
+Subject: [PATCH] merge from open-source master
+
+Change-Id: I8fa5fe12f60d0de2a0f6e0f9c567104253bcbea3
+
+project external/gtest/
+From 75f109c3120bf78ee89124f1f21b50ea24225236 Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:26 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: Ifbba5eb387ca72fe4346ed3dccafc1af4c9d8fc5
+
+project external/guava/
+From 5fa17bce47c47d5538beaaef0e38f0576446709c Mon Sep 17 00:00:00 2001
+From: Bill Napier <napier@google.com>
+Date: Wed, 28 Jul 2010 12:06:50 -0700
+Subject: [PATCH] Add in host side library as well.
+
+Change-Id: I65b65c7b39cfd4811312c244cda5513cc174f2cc
+
+project external/hostapd/
+From 3ad9316ae7540573f2597dfbd0d4f6d8b82f2e53 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sun, 16 Jan 2011 15:40:03 -0500
+Subject: [PATCH] Wrap makefile in conditional for BOARD_SOFTAP_DEVICE
+
+
+project external/icu4c/
+From fa7b84a26dd6c44cb0d219ef7b2f7e258219b616 Mon Sep 17 00:00:00 2001
+From: Jesse Wilson <jessewilson@google.com>
+Date: Thu, 16 Sep 2010 15:51:18 -0700
+Subject: [PATCH] Add optional tags to ICU.
+
+Change-Id: I65442453cacf4e9b2c620317021445d5bb0ef701
+
+project external/iproute2/
+From 14740a4557728ba63348e0574507a71fa40a8bd4 Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Fri, 13 Aug 2010 15:50:35 -0700
+Subject: [PATCH] Add CleanSpec.mk
+
+Change-Id: I520640e4712ffd04c83932fd68ac8cd86b8d0d82
+
+project external/ipsec-tools/
+From f5d0d0919f6c0b82611c1f8ad0cb6023a78b6ce0 Mon Sep 17 00:00:00 2001
+From: Chia-chi Yeh <chiachi@android.com>
+Date: Thu, 30 Sep 2010 15:35:51 +0800
+Subject: [PATCH] ipsec-tools: Use IDTYPE_ASN1DN for certificate-based IPSec
+ tunnels.
+
+Change-Id: I589c18af8095a4461ef9cc52489a2d0864872762
+
+project external/iptables/
+From 4a820b4c41de49482adce1a4e7424ca124b6b233 Mon Sep 17 00:00:00 2001
+From: Nick Kralevich <nnk@google.com>
+Date: Fri, 14 May 2010 10:40:57 -0700
+Subject: [PATCH] Get rid of warnings when compiled with -Wformat-security
+
+Change-Id: I25730fd5beb8bc8674f73ebcdfccb129ffde3590
+
+project external/jdiff/
+From 590cef7c1b48c9c3f4556ae65fbc0065d65da54a Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:28 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: Ib5d25eccbaacf1db30728d8eea72e42e98961ad6
+
+project external/jhead/
+From fd983181d9043cdf45497ace19c60fd9e4e1799c Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 16 Jul 2010 11:41:35 -0700
+Subject: [PATCH] add meta-files about 3rd party projects
+
+Change-Id: I099e123fbe642635ecfd7913b191c7bc9fc37d12
+
+project external/jpeg/
+From 6b9b4503adbd3fd0baef550ade0109a59e22b6c9 Mon Sep 17 00:00:00 2001
+From: Denise Cheng <dcheng@codeaurora.org>
+Date: Mon, 11 Apr 2011 11:07:41 -0400
+Subject: [PATCH] Preserve registers D8-D15 when using VFP as specified by
+ AAPCS v2.03
+
+Additionally had to split jdcolor-armv7.S into two files to resolve the
+issue of constants not being addressable in the code segment.
+
+Change-Id: Ie2ed1e85ecb29547a4ee36e47170f9bb5174d8e5
+
+project external/jsr305/
+From 8e937939899d5fe3a6864c7ecb9bb8632678a7c7 Mon Sep 17 00:00:00 2001
+From: Bill Napier <napier@google.com>
+Date: Wed, 28 Jul 2010 12:08:18 -0700
+Subject: [PATCH] Add in host library as well.
+
+Change-Id: I3a373c076c7075ae0d0caadce379c65d674542c9
+
+project external/junit/
+From e9b8080d6d80d17729e0b7f8b1d2b573b3456cc4 Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:29 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: Iecce8fab893d8b9eb9f4ce016bc9688b2b72ed81
+
+project external/kernel-headers/
+From 8abdcd4098f266e438e7129a3dfe311005686431 Mon Sep 17 00:00:00 2001
+From: Mike Lockwood <lockwood@android.com>
+Date: Mon, 14 Mar 2011 17:52:04 -0400
+Subject: [PATCH] DO NOT MERGE: Update USB accessory kernel header to include
+ serial number support
+
+Change-Id: Ib49382744c45c53c722d098627bece07d4f354f8
+Signed-off-by: Mike Lockwood <lockwood@android.com>
+
+project external/libffi/
+From 5dea54fd57265ce037ac94055b9f94a45558b39e Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 14 May 2010 14:39:33 -0700
+Subject: [PATCH] merge from open-source master
+
+Change-Id: Iafcb89bdab1495c869569f7063e6c775898dedfc
+
+project external/libgsm/
+From 5e4516958690b9a1b2c98f88eeecba3edd2dbda4 Mon Sep 17 00:00:00 2001
+From: Chia-chi Yeh <chiachi@android.com>
+Date: Thu, 23 Sep 2010 03:27:35 +0800
+Subject: [PATCH] libgsm: first import.
+
+Change-Id: Id4c884ba020207dc74543058c0f1bea3fa34d28d
+
+project external/libncurses/
+From 13c1a56b19c844f24bb6508123f63e5f02479037 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Tue, 21 Dec 2010 01:33:07 -0500
+Subject: [PATCH] Add LOCAL_MODULE_TAGS
+
+Change-Id: Ie75a32f4d718bf780ac136bebeaba8817c4afb52
+
+project external/libnfc-nxp/
+From e5201c1575b080d023a36ed36edd8017f5c4ce28 Mon Sep 17 00:00:00 2001
+From: Daniel Tomas <dtomas.nxp@gmail.com>
+Date: Wed, 20 Apr 2011 17:28:16 -0700
+Subject: [PATCH] Patch to perform a recover in case of a transaction failure
+
+This patch permit to perform a recovery when a transaction failure is detected.
+To detect this exception, we are filtering the Ox57 bytes because this  means that the IRQ
+line is high but no data is available from PN544.
+
+Change-Id: Ibb55ea3db2bc6cdff2c5b28bbe2127250c5637a8
+
+project external/libpcap/
+From 3a7bce5dda6a8db92c9248846d0255e68c3a5b2a Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:31 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: I5587777658a5b2148289aeb8c1c996a4014ce85e
+
+project external/libpng/
+From 177f4133aeefe3800eb301daef17d8e38f567605 Mon Sep 17 00:00:00 2001
+From: Denise Cheng <dcheng@codeaurora.org>
+Date: Thu, 28 Oct 2010 16:34:12 -0400
+Subject: [PATCH] png: Bug fix for artifact seen in Gallery3D path bar
+
+Bug is exposed when filter type is avg or paeth, and row width is
+equal to bytes per pixel.
+
+Change-Id: I71d7fe89f178c98c2296692ffffd2f8b7ff790ee
+
+project external/libvpx/
+From 76e0247ec867fcc232fc79f21e9bf85d3c3a5a3f Mon Sep 17 00:00:00 2001
+From: Andreas Huber <andih@google.com>
+Date: Mon, 8 Nov 2010 11:13:04 -0800
+Subject: [PATCH] Upgrade to the latest version of libvpx pulled from the webm
+ project's git server.
+
+latest commit pulled from git://review.webmproject.org/libvpx.git:
+4d1b0d2a2dff335baedd52bd7de09d55ec10b253
+
+Change-Id: I51c08b1b7f80c5071f33ca2c715b3ad03c693113
+related-to-bug: 3175974
+
+project external/libxml2/
+From f16b5fdc2102953f6b915472200061e17e76702b Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 16 Jul 2010 11:41:35 -0700
+Subject: [PATCH] add meta-files about 3rd party projects
+
+Change-Id: Ia8f0d3d868ecf7e7bd946e935ac9f93565480a1c
+
+project external/lsof/
+From 285fbd053b61062fb780cc53873802f1137ec7c2 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 7 Jan 2011 16:34:27 -0500
+Subject: [PATCH] Don't build lsof for the simulator
+
+
+project external/lzo/
+From 409e081d386c767ea872709efcc0adec20457f6d Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Tue, 28 Dec 2010 02:22:52 -0500
+Subject: [PATCH] Add module tags, quiet build warnings.
+
+
+project external/mtpd/
+From afcbce901fceeef051dfe1e86d3bea58817e59e4 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 11 Mar 2011 03:07:12 -0500
+Subject: [PATCH] mtpd: Add BOARD_KERNEL_NEW_PPPOX option for 2.6.37+
+
+These defines have changed in the 2.6.37 kernel, so add an option
+to make L2TP/PPTP use the new ones if required.
+
+Change-Id: I52e9ab2a950bb082d3208f90ab3a9dbaaabc5374
+
+project external/nano/
+From a8287cc0a6d1b4cb59214203712f1fef6882a63b Mon Sep 17 00:00:00 2001
+From: Jef Oliver <jeagoss@gmail.com>
+Date: Tue, 21 Dec 2010 01:13:51 -0700
+Subject: [PATCH] Add LOCAL_MODULES_TAGS
+
+Change-Id: I160f98cab01c1ea20f5a2ff74b8cc273a32773db
+
+project external/netcat/
+From fc2dc55c510657073ef4235658167a878e82cefa Mon Sep 17 00:00:00 2001
+From: Nick Kralevich <nnk@google.com>
+Date: Mon, 17 May 2010 11:20:48 -0700
+Subject: [PATCH] Get rid of warnings when compiled with -Wformat-security
+
+Change-Id: Ibe59f9704dc03aa592fce6ca6d422f4d4e6153cb
+
+project external/netperf/
+From 58ecd3b7c76263900e38921360e334a416aec362 Mon Sep 17 00:00:00 2001
+From: Nick Kralevich <nnk@google.com>
+Date: Mon, 17 May 2010 11:14:43 -0700
+Subject: [PATCH] Get rid of warnings when compiled with -Wformat-security
+
+Change-Id: I0e2346dfaa92ce1a9bf2734f033b12a9b775c3d7
+
+project external/neven/
+From 7164d6ac08ab9fc1247aa29f1dafd0ef7808f0f2 Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 16 Jul 2010 11:41:35 -0700
+Subject: [PATCH] add meta-files about 3rd party projects
+
+Change-Id: I7fa69f2966075f16ba39712d926bf933f9f92f8b
+
+project external/nist-sip/
+From a58e4068f86c6ca3f9771d4ec8b2665d070a170e Mon Sep 17 00:00:00 2001
+From: Chung-yih Wang <cywang@google.com>
+Date: Wed, 30 Mar 2011 18:28:53 +0800
+Subject: [PATCH] Fix the maddr issue for proxy authentication.
+
+bug:4185114
+Change-Id: I7832ffaa4383a84970293bcb921e3fb1fa1ccec4
+
+project external/oauth/
+From c76276a1d6165cfb502b06f65b1735fef0754d26 Mon Sep 17 00:00:00 2001
+From: Doug Zongker <dougz@android.com>
+Date: Mon, 29 Mar 2010 13:23:03 -0700
+Subject: [PATCH] relocate android.util.base64.* -> android.util.*
+
+b/2553469 - API REVIEW: android.util.base64
+
+Change-Id: I7b5048a8a6b37cdb437472e759f26b721ad58e3b
+
+project external/openssl/
+From 79b4e2291689cd0271ff64215048de7c0869b572 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 6 May 2011 04:34:21 -0400
+Subject: [PATCH] Merge branch 'gingerbread' of
+ git://android.git.kernel.org/platform/external/openssl into
+ HEAD
+
+
+project external/openvpn/
+From 24a48703abd2fe44929e202bb1b59ed2e8b535f5 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Tue, 28 Dec 2010 02:36:47 -0500
+Subject: [PATCH] openvpn: Fix printfs
+
+Change-Id: I29818ee092b5c51df823499c8a1fc623e9339d07
+
+project external/oprofile/
+From 041ee6ccda354960ebc1e1ccfff78685ec5326e1 Mon Sep 17 00:00:00 2001
+From: Ben Cheng <bccheng@android.com>
+Date: Fri, 3 Sep 2010 16:46:45 -0700
+Subject: [PATCH] Add timer mode in opcontrol.
+
+(cherry-picked from master - temporary workaround for the transition from
+oprofile to perf events)
+
+Change-Id: I647523e68814dee525b7599e9088b68a19e67f4b
+
+project external/ping/
+From f35ea57ab6d01badde92491274ff2d74cbe3cf01 Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 16 Jul 2010 11:41:36 -0700
+Subject: [PATCH] add meta-files about 3rd party projects
+
+Change-Id: I47bb3f40f3a6820892d964b03b536e8796af06e5
+
+project external/ppp/
+From d88bff8f5384285f76576eb7707c6d9d5b98edb6 Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 16 Jul 2010 11:41:36 -0700
+Subject: [PATCH] add meta-files about 3rd party projects
+
+Change-Id: Iede478bc19d5979417492d172288e6b1267ca5f1
+
+project external/proguard/
+From 6660cb6cb4231a03a3c02127fa5c4e7828422caa Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:40 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: I5e7a3a7161faf357d09d34b3dba61c52be7ace07
+
+project external/protobuf/
+From 3574de1ca8301e1e13d1c89f2e2a902499d6bae9 Mon Sep 17 00:00:00 2001
+From: Wink Saville <wink@google.com>
+Date: Wed, 6 Oct 2010 10:00:08 -0700
+Subject: [PATCH] Remove vestigial references to StringUtf8Micro.
+
+Change-Id: Ica75231b03de4768c671bf046b92bd7630ecd5c8
+
+project external/qemu/
+From e44d945fa0d204ab478d8f3053d16c016fba025e Mon Sep 17 00:00:00 2001
+From: Diogo Ferreira <deovferreira@gmail.com>
+Date: Thu, 26 May 2011 16:17:58 +0100
+Subject: [PATCH] qemu: Enable text rellocs in darwin.
+
+This fixes the compilation in darwin using Xcode 4.
+I believe that after this CM can be compiled without edits.
+
+Change-Id: Ia834dd39251b0e14039d758462f68f4c2d352e50
+
+project external/quake/
+From 9b0abf864353d47404417c1cbd8384e15be547b0 Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Tue, 28 Sep 2010 16:32:39 -0700
+Subject: [PATCH] Genericize strings with SD card references.
+
+Change-Id: If89e4a8d92ede146bd0b2cde9ff63d521cbb659d
+
+project external/rsync/
+From 0c1c581e7a91fe7da2a93f8845fc0241dba0a4bd Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Tue, 21 Dec 2010 03:06:42 -0500
+Subject: [PATCH] Add LOCAL_MODULE_TAGS
+
+Change-Id: Id972b0c0c876477cb29fcb9bb5b4a9c6be6703c0
+
+project external/safe-iop/
+From 07073634e2e3aa4f518e36ed5dec3aabc549d5fb Mon Sep 17 00:00:00 2001
+From: The Android Open Source Project <initial-contribution@android.com>
+Date: Fri, 16 Jul 2010 11:41:36 -0700
+Subject: [PATCH] add meta-files about 3rd party projects
+
+Change-Id: Ie21fe3d56bc57e5db746733849a77a42d4803709
+
+project external/skia/
+From 11c586ddb6d2376cbaf8e36d81726429036ef555 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 27 May 2011 09:04:38 -0400
+Subject: [PATCH] Revert "skia: Support for efficient image caching"
+
+This reverts commit 13fc4bd506d1af946c8c056d4974c3dbe62cb8bb.
+
+project external/sonivox/
+From d029b2378170cfd7bb34d894482065a762a54578 Mon Sep 17 00:00:00 2001
+From: Dan Bornstein <danfuzz@android.com>
+Date: Fri, 21 Jan 2011 13:28:42 -0800
+Subject: [PATCH] Remove unused file.
+
+Change-Id: Ib50474510f2a95e398e279f34630bdc15b43809c
+
+project external/speex/
+From 32e4d0aa78c5879565cbcd06415fa2e344036ab5 Mon Sep 17 00:00:00 2001
+From: Chia-chi Yeh <chiachi@android.com>
+Date: Tue, 24 Aug 2010 18:46:20 +0800
+Subject: [PATCH] Speex: build noise suppressor.
+
+Change-Id: Ie17f494108d0b06c1f8de2ec185f18040f92e4ec
+
+project external/sqlite/
+From 4260bd38f168bfa5551930d56d9e6a629a684372 Mon Sep 17 00:00:00 2001
+From: Kiran Kumar H N <hurlisal@codeaurora.org>
+Date: Fri, 11 Feb 2011 10:45:48 -0800
+Subject: [PATCH] SQLite: Enable fdatasync for SQLite.
+
+SQLite library recommends usage of fdatasync when available.
+Since it is available for linux, enable it. This gives better
+performance compared to fsync.
+
+project external/srec/
+From 7390035ea61b32477243d60c452664150b61f023 Mon Sep 17 00:00:00 2001
+From: Jean-Michel Trivi <jmtrivi@google.com>
+Date: Thu, 5 Nov 2009 19:33:05 -0800
+Subject: [PATCH] Fix bug 3119612 Set VoiceDialer to use the VOICE_RECOGNITION
+ audio source.
+
+
+project external/stlport/
+From 23d26c04304e90e94e9f7ff4dbddde644010660b Mon Sep 17 00:00:00 2001
+From: Ying Wang <wangying@google.com>
+Date: Thu, 23 Sep 2010 18:00:14 -0700
+Subject: [PATCH] Merged prebuilt NDKs for different Build OS.
+
+Change-Id: I49e6a5e16bfc4283cc4dbb5770fd74f500609169
+
+project external/strace/
+From 98692753a1cd03752d4e9e0a69b1d997f65e21db Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Tue, 28 Dec 2010 03:15:19 -0500
+Subject: [PATCH] Fix printfs
+
+Change-Id: I6175761056b8926c0f88bbdf1fafc193548679a1
+
+project external/svox/
+From 1c643c7e8c13bb758249766b04a7b605179f06fa Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Thu, 6 Jan 2011 10:28:24 -0800
+Subject: [PATCH] Import translations for additional languages.
+
+Change-Id: I69ccc4d420e18384d551ed98cd5591aae1c782be
+
+project external/tagsoup/
+From 68c2ec9e0acdb3214b7fb91dbab8c9fab8736817 Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:44 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: Iccbe0259f9b75ddae90161cc80a5bda354aafc7d
+
+project external/tcpdump/
+From 532b8f38c144da9a298260a5d8978ab9e8e3856c Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:45 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: Ic97b0329351918b73833d21c8c6b2cb5f8241fb4
+
+project external/tinyxml/
+From d589f7e4a51e75bd5c98a3defd8ee84d7059e86e Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:45 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: I7bd439a64467205d4ba1464906916834c37613af
+
+project external/tremolo/
+From 9a688754461ebfc91769b5d3c8ba5aba9fe1f376 Mon Sep 17 00:00:00 2001
+From: Andreas Huber <andih@google.com>
+Date: Wed, 23 Jun 2010 10:01:39 -0700
+Subject: [PATCH] Make sure this assembly fragment properly supports ARM/THUMB
+ transitions by using the BX, LR instruction instead of
+ antiquated MOV PC, LR.
+
+Change-Id: Ia58b53bf50ccbc471ef001044b18a019631a4df0
+related-to-bug: 2774193
+
+project external/v8/
+From fc51cd7f7964f07f934da780077199763bf5687a Mon Sep 17 00:00:00 2001
+From: antonm@chromium.org <antonm@chromium.org>
+Date: Fri, 14 Jan 2011 12:34:09 +0000
+Subject: [PATCH] Forward V8 to version 2.5.9.22
+
+This is a squashed version of the following commits from v8's 2.5 branch:
+
+Port r6301 to 2.5 branch.
+
+Review URL: http://codereview.chromium.org/6293002
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@6316 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Port r6332 to 2.5 branch
+
+TBR=erik.corry@gmail.com
+Review URL: http://codereview.chromium.org/6361001
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@6333 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Merge chromium about:credits change to 2.5 branch.
+
+TBR=mal@chromium.org
+Review URL: http://codereview.chromium.org/6349005
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@6355 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Port r6388 to 2.5 branch. Review URL: http://codereview.chromium.org/6311009
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@6394 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Port r6539 to 2.5 branch
+
+Review URL: http://codereview.chromium.org/6386026
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@6541 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Merge r6593 from bleeding edge to 2.5 branch. Review URL: http://codereview.chromium.org/6410054
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@6596 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Backport r6579 (code generation bug on ARM). Review URL: http://codereview.chromium.org/6334082
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@6601 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Merge r6592, r6612, r6618, r6626 and r6636 into 2.5 branch. Review URL: http://codereview.chromium.org/6411001
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@6641 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Merge r6773 to 2.5 branch.
+
+Review URL: http://codereview.chromium.org/6484036
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@6881 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Merge r6954 from the bleeding edge to the 2.5 branch. Review URL: http://codereview.chromium.org/6598003
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@6961 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Merge r6983 to the 2.5 branch
+
+r6983: ARM: Fix unaligned read/write
+Review URL: http://codereview.chromium.org/6592066
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@6987 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Merge r7000 from the bleeding_edge to 2.5 branch. Review URL: http://codereview.chromium.org/6591071
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@7001 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Fix incorrect assumption on bit-and on ARM Review URL: http://codereview.chromium.org/6673064
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@7184 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+ARM: Fix the debugger using wrong break stub for slot breaks
+
+Porting r7203 to 2.5 branch.
+Review URL: http://codereview.chromium.org/6676062
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@7231 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+Merge r8007 to 2.5 branch
+
+r8007: ARM: Fix wrong value returned from keyed property assignemnt
+
+R=erik.corry@gmail.com
+
+BUG=1401
+TEST=test/mjsunit/regress/regress-1401.js
+Review URL: http://codereview.chromium.org/6966019
+
+git-svn-id: https://v8.googlecode.com/svn/branches/2.5@8014 ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+project external/vim/
+From d6aaec4005d95713c23ba49695ea97d220caf09e Mon Sep 17 00:00:00 2001
+From: Arne Coucheron <arco68@gmail.com>
+Date: Wed, 16 Feb 2011 07:39:15 +0100
+Subject: [PATCH] Fix shared directory for Vim
+
+Change-Id: Ia45204ae53063680c37ebf48b3ec39f9dfb0cf1f
+
+project external/webkit/
+From 83606fae411d39100240496f63361892773aa0cb Mon Sep 17 00:00:00 2001
+From: Matthew Hui <mhui@codeaurora.org>
+Date: Thu, 3 Mar 2011 17:24:39 -0500
+Subject: [PATCH] external/webkit: lower backing store priority
+
+To avoid page load speed and JS speed, lower
+the TBS thread priority, and throttle speculative
+updates by increasing their idle time, and schedule
+them as low priority tasks.
+
+Change-Id: Idd190b30ca6fc9d09abf743b020c86d459464c90
+
+project external/wireless-tools/
+From 059149abe4b266023be629f678eeb188af589abd Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Tue, 21 Dec 2010 01:33:33 -0500
+Subject: [PATCH] Add LOCAL_MODULE_TAGS
+
+Change-Id: I3eabc371f96cdba52386bba8571e3935d45f3b4b
+
+project external/wpa_supplicant/
+From f5889d8bb6d7e36bc7f9ac2dd82bb7e31f3cda0a Mon Sep 17 00:00:00 2001
+From: Asure <asure007@gmail.com>
+Date: Mon, 1 Nov 2010 19:13:49 +0100
+Subject: [PATCH] Added AWEXT driver
+
+Change-Id: I3f1858616e0a62e203e00a70c89ea3b2f2d2f8c4
+
+project external/wpa_supplicant_6/
+From a8b85c97362de05ede513159a7b631e30f91653f Mon Sep 17 00:00:00 2001
+From: nadlabak <pavel@doshaska.net>
+Date: Mon, 14 Feb 2011 23:11:21 +0100
+Subject: [PATCH] add missing .config file
+
+
+project external/xmlwriter/
+From e95d92246ee35273dde2bee8b00485cc14c12be5 Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:04:49 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: I251852db7beae805da9db8efa21d6ff47eaf3b52
+
+project external/yaffs2/
+From 62a1cf4d3ded963f6db6f24d5c5f087d3a4cb4a0 Mon Sep 17 00:00:00 2001
+From: chriz <nookieman@gmx.de>
+Date: Thu, 3 Mar 2011 00:04:54 +0100
+Subject: [PATCH] minor changes to get rid of compiler warnings
+
+ * use void as argument in read_chunk
+ * removed unused variable count
+
+Change-Id: Idea8710e4be72bb25fb88d0f7e83bd92b0730ee4
+
+project external/zlib/
+From 463a5627f4415ce4f6fb8636b97393565c137cf8 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sat, 21 May 2011 05:39:10 -0400
+Subject: [PATCH] Revert "Revert "zlib: Neon optimization for inflate_fast()""
+
+This reverts commit a19ef6d3826b017cf82f5e8d4291c73851f87321.
+
+HTC has shipped this on production devices already, and Fennec has
+been fixed.
+
+project frameworks/base/
+From 5f7b7a7a39b1f88fae033116aa94e5c5bc02f468 Mon Sep 17 00:00:00 2001
+From: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+Date: Fri, 3 Jun 2011 20:22:50 +0200
+Subject: [PATCH] disable reboot menu, setting must be implemented later
+
+
+project frameworks/ex/
+From e0d5045a56146f0e7d8ea9e400f6eb209edceec5 Mon Sep 17 00:00:00 2001
+From: Maryam Garrett <mkamvar@google.com>
+Date: Tue, 30 Nov 2010 13:02:18 -0500
+Subject: [PATCH] DO NOT MERGE:Changes in master, which did not make it into
+ GB
+
+The original change simply added 3 extra constants to be used for logging
+information related to alternative word selection from the n-best list
+which is returned for voice ime recognition results
+Bug: 3243768
+Change-Id: Ib01184901c7b4a50235877664993d26940cfe43c
+
+project frameworks/opt/emoji/
+From 49f8fa5f480ae382f9087fde333b50072b214ad2 Mon Sep 17 00:00:00 2001
+From: Dan Bornstein <danfuzz@android.com>
+Date: Wed, 5 May 2010 09:38:16 -0700
+Subject: [PATCH] For issue #2651381, allow library prelinking.
+
+Change-Id: I5d1a6f7f8d5aa18128e56e1cc527b919ea34d495
+
+project hardware/alsa_sound/
+From 78f19c248cd5f80b77ba64a0494635ff98f6b3b4 Mon Sep 17 00:00:00 2001
+From: Dalingrin <dalingrin@gmail.com>
+Date: Mon, 23 May 2011 16:45:19 -0500
+Subject: [PATCH] Sync with OMAPZOOM alsa_sound tree
+
+Change-Id: I5660cffb4c4e1e6d3ded00a06c261a9ea51a4010
+http://omapzoom.org/?p=platform/hardware/alsa_sound.git;a=commit;h=7b41d20f17541ac751f212e8a1d3dfb626a1b7be
+
+project hardware/broadcom/wlan/
+From e471b83f1c2d3982fae0307f37c1ca30ca7e6837 Mon Sep 17 00:00:00 2001
+From: Dmitry Shmidt <dimitrysh@google.com>
+Date: Tue, 21 Dec 2010 15:38:11 -0800
+Subject: [PATCH] bcm4329: Update Firmware to version 4.218.248-18 - DO NOT
+ MERGE
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- Fix problem with early disassoc with some APs when getting out of sync
+  with AP’s beacon (only in PM=1 mode and DTIM_SKIP enforced)
+- Fix SoftAP white list MAC filtering
+- Fix problem with timer for 11N/AMPDU
+- Add FW Reload event in case of rx/tx problems
+- Add extra IOVAR dtim_assoc and bi_assoc to read dtim/bi from associated AP
+- Fix corner case with WMM ACM testing with some test engines
+- Fix to meet new WiFI certification requirement to allowed STA to work
+  in not-11N mode for WEP encryption
+- Add keep-alive option
+
+Change-Id: I767b9e77c59f612ee8b04e9d278fd9f92de93e96
+Signed-off-by: Dmitry Shmidt <dimitrysh@google.com>
+
+project hardware/gpsshim/
+From fac48924e05b5d7de3b770f62f70266e2a452b41 Mon Sep 17 00:00:00 2001
+From: Ricardo Cerqueira <cyanogenmod@cerqueira.org>
+Date: Sat, 7 May 2011 00:26:16 +0100
+Subject: [PATCH] Add support for the AGPS_RIL extension
+
+And move the struct definitions to a header file
+
+Change-Id: I333a51684c2905386c1440f79a6e4c7d767d0344
+
+project hardware/libhardware/
+From 5bfed847536ec154fcc55d67b316ab0278307cc3 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sat, 30 Apr 2011 02:20:00 -0400
+Subject: [PATCH] Merge branch 'gingerbread' of
+ git://android.git.kernel.org/platform/hardware/libhardware
+ into HEAD
+
+
+project hardware/libhardware_legacy/
+From 8315a3dc93cc2b4e50e23d3150e603ef865ee1f4 Mon Sep 17 00:00:00 2001
+From: Dhiraj Nadgouda <dnadgouda@nvidia.com>
+Date: Tue, 1 Feb 2011 15:16:21 +0530
+Subject: [PATCH] GB: Add media recorder hardware interface.
+
+  - add media recorder hardware interface.
+  - bug 786503
+
+Change-Id: If7557de50b921714898226281ea3772b8602cd20
+
+project hardware/msm7k/
+From a4bd596610c9d0060f4d9987955975ebd1e5630c Mon Sep 17 00:00:00 2001
+From: Jordan Patterson <jordanp@gmail.com>
+Date: Sat, 14 May 2011 15:31:41 -0600
+Subject: [PATCH] Fix for a1026 suspend
+
+Change-Id: I24a4a11bbb14c3512795ad17af2972b81b2ce022
+
+project hardware/qcom/gps/
+From e2330d4c5fbcf41f4008472d5fee6f6e94f21731 Mon Sep 17 00:00:00 2001
+From: Christopher Lais <chris+android@zenthought.org>
+Date: Wed, 27 Apr 2011 05:45:50 -0500
+Subject: [PATCH] libloc_api: fix format for debug output
+
+Change-Id: I74e081297ac2c6601be915e517230d0a52a75150
+
+project hardware/qcom/media/
+From 2c5f86601528e79e4b3e997e68230aa6119f5ad4 Mon Sep 17 00:00:00 2001
+From: Tony Chow <momodco@gmail.com>
+Date: Mon, 18 Apr 2011 18:28:39 +0800
+Subject: [PATCH] adding lib references to fix the build break during
+ executing make command
+
+Change-Id: I2445d0dc14d3c8dfb8ec0901cf2fdf61a8f72574
+
+project hardware/ril/
+From a5f51f08b01f2fe8b2307299cddc2c54dc6c89f1 Mon Sep 17 00:00:00 2001
+From: Ricardo Cerqueira <cyanogenmod@cerqueira.org>
+Date: Mon, 24 Jan 2011 16:17:33 +0000
+Subject: [PATCH] Allow a device config to include its own libril source
+
+There's a number of reasons to use an alternate libril:
+* Older RIL blobs with incompatible ABIs
+* Vendors that don't quite follow the documented API
+* Devices derived from CAF code (which has some differences to
+Google's versions)
+* Probably others...
+
+If a BoardConfig includes a TARGET_PROVIDES_LIBRIL, this
+will make it build libril using the code that's in <device-dir>/libril
+instead of hardware/ril/libril.
+
+Alternatively, that variable can contain the full path to the
+alternative libril
+
+Change-Id: I622e16964ed026805fb82377dc8240b04f53f467
+
+project hardware/ti/
+From 0d3ed5963d2c57fc35a40fb852e7fd1a5ecfcbdf Mon Sep 17 00:00:00 2001
+From: Quarx2k <agent00791@gmail.com>
+Date: Sun, 22 May 2011 02:19:05 +0700
+Subject: [PATCH] add 720 encoder to OmxCore
+
+
+project libcore/
+From f241d462634527692b7d99335cdc8c11883ac966 Mon Sep 17 00:00:00 2001
+From: Jesse Wilson <jessewilson@google.com>
+Date: Tue, 29 Mar 2011 11:01:41 -0700
+Subject: [PATCH] Don't read from the delegate stream after we close it.
+
+Change-Id: I9a018ca88373d5f317335e35fc6ca43c5473490e
+http://b/4188137
+
+project ndk/
+From 7a619be40e8594a961066a33b7cc9ef52f566988 Mon Sep 17 00:00:00 2001
+From: David 'Digit' Turner <digit@google.com>
+Date: Sat, 8 Jan 2011 15:07:22 +0100
+Subject: [PATCH] arm-linux-androideabi: Use -fpic by default instead of -fPIC
+
+Used to prevent a performance degradation compared to arm-eabi
+when using the standalone toolchain. NDK toolchain not affected.
+
+Change-Id: I4c603974fdc16dd6eb7be68dd0b72c4a98f25484
+
+project packages/apps/ADWLauncher/
+From 640e0fa4282bb60cea255661bd6f7e59031d248f Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 3 Jun 2011 06:18:43 +0400
+Subject: [PATCH] Merge "Don't use black color when selected time" into
+ gingerbread
+
+
+project packages/apps/AccountsAndSyncSettings/
+From 3b7fe90d745ec775571d1b52de51aeb13c9b3e36 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sat, 30 Apr 2011 02:30:09 -0400
+Subject: [PATCH] Merge branch 'gingerbread' of
+ git://android.git.kernel.org/platform/packages/apps/AccountsAndSyncSettings
+ into HEAD
+
+
+project packages/apps/AicBootFix/
+From 6cbbe9d406d4e99ef4d39765cd0f1fe977e382da Mon Sep 17 00:00:00 2001
+From: Sven Dawitz <sven@dawitz.de>
+Date: Fri, 18 Mar 2011 23:23:51 +0100
+Subject: [PATCH] AicBootFix: adding missing Android.mk file
+
+This is part of the battery drain fix for Ace devices
+
+Change-Id: I921853cf8f787c72db929748017c09730b74fd17
+
+project packages/apps/AndroidTerm/
+From a8265347866b75b78f030d1015edbe64eb9d7c77 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 3 Jun 2011 05:57:10 +0400
+Subject: [PATCH] Merge "Traditional Chinese: Update translations for v1.0.29"
+ into gingerbread
+
+
+project packages/apps/Bluetooth/
+From 8dbe0835734687c7c93b721795ef72e363ccc0b4 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sun, 29 May 2011 17:19:47 -0400
+Subject: [PATCH] Merge branch 'master' of
+ git://android.git.kernel.org/platform/packages/apps/Bluetooth
+ into HEAD
+
+
+project packages/apps/Browser/
+From 34bbba1068eeb85bdde242f3426c62fcbf38d8b5 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sat, 30 Apr 2011 02:30:56 -0400
+Subject: [PATCH] Merge branch 'gingerbread' of
+ git://android.git.kernel.org/platform/packages/apps/Browser
+ into HEAD
+
+
+project packages/apps/CMParts/
+From c1a3571707c7605864d8729b2d4715031431ac54 Mon Sep 17 00:00:00 2001
+From: Quarx2k <agent00791@gmail.com>
+Date: Fri, 3 Jun 2011 21:53:51 +0700
+Subject: [PATCH] Merge branch 'gingerbread' of
+ https://github.com/CyanogenMod/android_packages_apps_CMParts
+ into gingerbread
+
+
+project packages/apps/CMStats/
+From 5c673d3d6d6b92cf2c9cf2bd2d95e88c1d86894b Mon Sep 17 00:00:00 2001
+From: Danez <code@tschinder.de>
+Date: Sun, 29 May 2011 15:21:50 +0200
+Subject: [PATCH] CMStats: Fixed typo in german translation.
+
+Change-Id: Id7ce52a1d88e6a36a037e0344428f6ad0ebaa4d5
+
+project packages/apps/CMUpdateNotify/
+From 4090f6efda59849a5e6809ea67e314bbf2046f12 Mon Sep 17 00:00:00 2001
+From: Takuo Kitame <kitame@gmail.com>
+Date: Tue, 31 May 2011 15:37:50 +0900
+Subject: [PATCH] Update Japanese translation.
+
+ - failure message.
+
+Change-Id: Ib9804d082531062572b84ce7d1ba78a74b888b25
+
+project packages/apps/CMWallpapers/
+From 96ffb2a26d6b7b913869408c85ec3a67b8edeea2 Mon Sep 17 00:00:00 2001
+From: ottuh <michel91@gmail.com>
+Date: Thu, 19 May 2011 19:03:55 +0200
+Subject: [PATCH] CMWallpapers: Dutch translation added. Completely checked
+ for errors by WGSpoelstra, thank you.
+
+
+project packages/apps/CMWimaxSettings/
+From 5627ae12dc7142e9b1c5ddddbe42ecd57cd561ef Mon Sep 17 00:00:00 2001
+From: Scott Brady <sbradymobile@gmail.com>
+Date: Thu, 19 May 2011 11:43:16 -0700
+Subject: [PATCH] Better fix for 4G on at boot: CMWimaxSettings portion
+
+Update: after more testing we don't need to test for the
+setting, we only need to set it so other services know its
+state.  This reverts to the original WimaxEnabler.
+The setting is now done in WimaxHelper.
+
+Change-Id: I9c9122762ae04cb30a12fbacf0382850436c5153
+
+project packages/apps/Calculator/
+From 5c85e48a713ec70ebce65ebf1a3622035992f8c3 Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Fri, 18 Mar 2011 15:13:35 -0700
+Subject: [PATCH] Import revised translations.  DO NOT MERGE
+
+Change-Id: I644ab56a04704325b8c8c3bc8cdb0e8c485cb1da
+
+project packages/apps/Calendar/
+From b35a8f433c2aef469394c868c4e72a625af4b357 Mon Sep 17 00:00:00 2001
+From: ottuh <michel91@gmail.com>
+Date: Sat, 21 May 2011 12:16:28 +0200
+Subject: [PATCH] Calendar: Dutch translation updated!
+
+
+project packages/apps/Camera/
+From b37b181bf2f542f9c9bd142690c44afe57665fd8 Mon Sep 17 00:00:00 2001
+From: Quarx2k <agent00791@gmail.com>
+Date: Thu, 2 Jun 2011 23:38:57 +0700
+Subject: [PATCH] some changes
+
+
+project packages/apps/CertInstaller/
+From 457ffda6726b8e0f88d78a9267b840d102a8907a Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Fri, 18 Mar 2011 15:14:19 -0700
+Subject: [PATCH] Import revised translations.  DO NOT MERGE
+
+Change-Id: Ie01d7156414d799e750c7cd33915db97d9abfaea
+
+project packages/apps/Contacts/
+From 969126803f61ac6c9c6aecae9b8835fc14436f4f Mon Sep 17 00:00:00 2001
+From: Danez <code@tschinder.de>
+Date: Mon, 30 May 2011 01:56:02 +0200
+Subject: [PATCH] Bugfix: Setting dial_retrieve_last was not used in dialpad.
+
+The setting exists in the menu, but regardless if the option was actived
+or not, it always retrieved the last called number when pressing the
+dialbutton and nothing entered before.
+Added a check for this setting. Also removed a duplicate check in
+onClick(), which is already done in dialButtonPressed().
+
+An other possibility would be the removing of this setting. Not sure
+which is intended.
+
+Change-Id: Ia480105b5f6697c7a422acecea2fceebf16fd71f
+
+project packages/apps/DSPManager/
+From 5488f7b337bd953626f30b68b050ee91df1084eb Mon Sep 17 00:00:00 2001
+From: Nicholas <agent00791@gmail.com>
+Date: Mon, 23 May 2011 09:41:10 -0700
+Subject: [PATCH] Merge pull request #1 from ctz556/gingerbread
+
+Simplified Chinese translation
+
+project packages/apps/DeskClock/
+From 28de5833ae19afb0700f4c3655652bc6462671b1 Mon Sep 17 00:00:00 2001
+From: pvolkov <marshmollow@gmail.com>
+Date: Thu, 2 Jun 2011 14:30:45 +0400
+Subject: [PATCH] Update Russian translation. DeskClock
+
+
+project packages/apps/Email/
+From 402a12cbda244420a073c9bbdda28c780bec61f9 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 3 Jun 2011 06:07:47 +0400
+Subject: [PATCH] Merge "Update Japanese translation." into gingerbread
+
+
+project packages/apps/FM/
+From 158d7e081b1b817be3392f5dcbc58a59b0726a92 Mon Sep 17 00:00:00 2001
+From: ottuh <michel91@gmail.com>
+Date: Fri, 20 May 2011 16:52:28 +0200
+Subject: [PATCH] FM: Dutch translation added (re-checked). Completely checked
+ for errors by WGSpoelstra, thank you.
+
+
+project packages/apps/FileManager/
+From e3b5e8ba148aa5da10edea8dbdce809c4d17623e Mon Sep 17 00:00:00 2001
+From: Gustavo <gustavogyn@gmail.com>
+Date: Wed, 4 May 2011 07:13:29 -0700
+Subject: [PATCH] PT-BR: Added missing translations
+
+Change-Id: I58c739a90d4c72bb4e785535a143cd1f826992f8
+
+project packages/apps/Gallery/
+From ea32625b6296585a0328886c33159d88e3a2c693 Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Fri, 18 Mar 2011 15:14:56 -0700
+Subject: [PATCH] Import revised translations.  DO NOT MERGE
+
+Change-Id: I6213d0d5cffb53a5f13b3fe0ce281268aed4d054
+
+project packages/apps/Gallery3D/
+From b96490084891e88ac5dfd788cd7a5111bb513c15 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Mon, 30 May 2011 02:21:14 +0400
+Subject: [PATCH] Merge "Fix Hebrew translation. Gallery3D (fixing previous
+ upload. sorry)" into gingerbread
+
+
+project packages/apps/GanOptimizer/
+From 4ac9a936e2f08d838d6fa879212cb1f74465e7f2 Mon Sep 17 00:00:00 2001
+From: Eug89 <eugenioziliotto@gmail.com>
+Date: Fri, 11 Mar 2011 18:42:18 +0100
+Subject: [PATCH] Italian translations:initial translations
+
+Change-Id: I41f660b3b1582b2207f5d12c2d192e2a1600bb99
+
+project packages/apps/HTMLViewer/
+From 3a6928aa5628e88304283f2e361d74f3edba8015 Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Tue, 29 Mar 2011 10:55:55 -0700
+Subject: [PATCH] Import revised translations.  DO NOT MERGE
+
+Change-Id: Ibd8430bf048a39f13b0d893d552982bb38398084
+
+project packages/apps/Launcher2/
+From 9d8285fa61f2d61166cb8d34b0be84731d8605b8 Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Fri, 18 Mar 2011 15:15:34 -0700
+Subject: [PATCH] Import revised translations.  DO NOT MERGE
+
+Change-Id: I68e6def231a4c2c14f898ca26837fda0ee31d316
+
+project packages/apps/Mms/
+From fd211cfa80865654edac771ed399f9a89671a8a0 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 3 Jun 2011 06:11:29 +0400
+Subject: [PATCH] Merge "Updated Ukrainian translation" into gingerbread
+
+
+project packages/apps/Music/
+From 1a174b9aa9830c9e84a77d84c3a676c75d2f6a05 Mon Sep 17 00:00:00 2001
+From: Takuo Kitame <kitame@gmail.com>
+Date: Tue, 31 May 2011 15:33:27 +0900
+Subject: [PATCH] Update Japanese translation.
+
+ - unknown_album_artist_name
+
+Change-Id: Idfd2b9a078ecd533ecadadd42b247f14177f662d
+
+project packages/apps/Nfc/
+From 543b1768a231bd05cdb679262868df625a00522f Mon Sep 17 00:00:00 2001
+From: Jeff Hamilton <jham@android.com>
+Date: Thu, 28 Apr 2011 10:28:25 -0700
+Subject: [PATCH] Merge "Better logging on SE open failure." into gingerbread
+
+
+project packages/apps/PackageInstaller/
+From 6d2974c3f346511f96eba3370398123422e578fc Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Fri, 18 Mar 2011 15:16:11 -0700
+Subject: [PATCH] Import revised translations.  DO NOT MERGE
+
+Change-Id: I757f1bce2dfae8c0ac3c8a4c8d19c5f673b2f357
+
+project packages/apps/Pacman/
+From df55b5c0b3cc4d7d114648b97001bc16e9588679 Mon Sep 17 00:00:00 2001
+From: ottuh <michel91@gmail.com>
+Date: Fri, 20 May 2011 16:53:28 +0200
+Subject: [PATCH] Pacman: Dutch translation added (re-checked). Completely
+ checked for errors by WGSpoelstra, thank you.
+
+
+project packages/apps/Phone/
+From 53620f67a3e2ac6ca31636ef4501bbdabbf9c542 Mon Sep 17 00:00:00 2001
+From: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+Date: Fri, 3 Jun 2011 05:09:20 +0200
+Subject: [PATCH] Merge remote-tracking branch 'remotes/cyanogen/gingerbread'
+ into gingerbread
+
+
+project packages/apps/Protips/
+From 5897fc06cbac1901467ff3e70159ccf5ed41ee20 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 6 May 2011 11:47:41 +0400
+Subject: [PATCH] Merge "Updated Italian translations: added new br0tip" into
+ gingerbread
+
+
+project packages/apps/Provision/
+From f31b933a8aebf07e3feb512ac650c5691c8c5e0f Mon Sep 17 00:00:00 2001
+From: Ying Wang <wangying@google.com>
+Date: Wed, 29 Sep 2010 15:23:06 -0700
+Subject: [PATCH] Fix proguard flag file dependency.
+
+Change-Id: Ie0d23dbc6e8f6d4d17ce1111de51cb5695d7acdd
+
+project packages/apps/QuickSearchBox/
+From 858c98193a771cfd4d91852282d1f5490b29bb4a Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Tue, 29 Mar 2011 10:57:19 -0700
+Subject: [PATCH] Import revised translations.  DO NOT MERGE
+
+Change-Id: Id73e23959dd7575bdaeb7b591b1b42be6f4c3bad
+
+project packages/apps/Settings/
+From f89dad5b9868fc5b1873784ca5cc6891f378e9c6 Mon Sep 17 00:00:00 2001
+From: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+Date: Fri, 3 Jun 2011 05:09:10 +0200
+Subject: [PATCH] Merge remote-tracking branch 'remotes/cyanogen/gingerbread'
+ into gingerbread
+
+
+project packages/apps/SoundRecorder/
+From 6fa5a7ae03db32ba5eec2fb292b7b3a8edf94328 Mon Sep 17 00:00:00 2001
+From: CEnnis <cje036@gmail.com>
+Date: Sun, 17 Apr 2011 17:24:49 -0400
+Subject: [PATCH] Change output of SoundRecorder from .3gpp to .3gp
+
+Not really a major issue, but some file managers seem to no recognize .3gpp correctly,
+(however File Manager does).  Just seems unnecessary to have it output .3gpp over .3gp
+when they are the same thing.
+
+Change-Id: Id8c7ec6049fb19db7a39b823df3e5b9e0081764f
+
+project packages/apps/Stk/
+From d2f267c7ed48dc77878299e12925bc3c39db5d37 Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Thu, 6 Jan 2011 10:39:55 -0800
+Subject: [PATCH] Import translations for additional languages.
+
+Change-Id: I47f28c64a6ff69326f5dc30e0923ae38b80b9798
+
+project packages/apps/Superuser/
+From 90ba815cb87a3db7895424c4f4344b87ffd2a508 Mon Sep 17 00:00:00 2001
+From: ottuh <michel91@gmail.com>
+Date: Mon, 23 May 2011 17:29:18 +0200
+Subject: [PATCH] Superuser: Dutch translation updated!
+
+
+project packages/apps/Tag/
+From 478eadc756466cc8438f0ba1db8e229fcd3a087a Mon Sep 17 00:00:00 2001
+From: Jeff Hamilton <jham@android.com>
+Date: Sun, 3 Apr 2011 21:12:13 -0500
+Subject: [PATCH] Don't crash if the saved state is invalid.
+
+Bug: 3429970
+Change-Id: I0b2e82d0259b34dad9701cdef9645670863e0d70
+
+project packages/apps/Torch/
+From 9ec8f63318ac01ec0dce107d73d0d4caecf77ffb Mon Sep 17 00:00:00 2001
+From: Quarx2k <agent00791@gmail.com>
+Date: Fri, 13 May 2011 17:19:26 +0700
+Subject: [PATCH] Increase of brightness flashlight (High brightness) so as
+ ledefy on max.
+
+
+project packages/apps/Usb/
+From b926200aad906cc8eba3e30085463f618cf61ae8 Mon Sep 17 00:00:00 2001
+From: Quarx2k <agent00791@gmail.com>
+Date: Thu, 26 May 2011 19:38:01 +0700
+Subject: [PATCH] Merge branch 'master' of
+ https://github.com/Quarx2k/android_packages_apps_Usb
+
+
+project packages/apps/VoiceDialer/
+From bed30806bf45a8d1abdbf5a3c8e829a151936988 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Mon, 28 Feb 2011 17:23:39 -0500
+Subject: [PATCH] Merge branch 'gingerbread' of
+ git://android.git.kernel.org/platform/packages/apps/VoiceDialer
+ into 233-merge
+
+
+project packages/experimental/
+From 504fe3ddddf722e4315b382319970b0e435af27b Mon Sep 17 00:00:00 2001
+From: Brad Fitzpatrick <bradfitz@android.com>
+Date: Mon, 11 Oct 2010 11:35:21 -0700
+Subject: [PATCH] StrictMode test: add a button for violating in a loop.
+
+Change-Id: I2df9bf175c11e4748fbe0f33a52ee62aac733292
+
+project packages/inputmethods/LatinIME/
+From 123207bbf77ae7c4c3a5c68b25234e1d9405ea92 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 20 May 2011 09:42:39 +0400
+Subject: [PATCH] Merge "LatinIME: Make some stuff themable" into gingerbread
+
+
+project packages/providers/ApplicationsProvider/
+From 284d98dded9a12a06552cc987203878f313647e4 Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Fri, 18 Mar 2011 15:17:58 -0700
+Subject: [PATCH] Import revised translations.  DO NOT MERGE
+
+Change-Id: I8f312f2b181286872d21603797f5a94e300ed5e8
+
+project packages/providers/CalendarProvider/
+From c1b9d8401cfc38cd86eaa059f433ff4e3b66366a Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Fri, 3 Jun 2011 06:18:09 +0400
+Subject: [PATCH] Merge "Prevent locale specific numeral conversion when
+ building SQL query" into gingerbread
+
+
+project packages/providers/ContactsProvider/
+From 1a20637da1103329a607d311e66071e596931b91 Mon Sep 17 00:00:00 2001
+From: Eyad Aboulouz <eyad.aboulouz@gmail.com>
+Date: Fri, 22 Apr 2011 03:57:59 -0400
+Subject: [PATCH] Fixes issue #3404
+ (http://code.google.com/p/cyanogenmod/issues/detail?id=3404)
+ where many applications such as SMS, Contacts, etc would FC
+ if the user changes their locale to Arabic (or any locale
+ that doesn't use the English numeral system)
+
+Change-Id: I1662a80a4d290bfb5450f32052232235c22327f9
+
+project packages/providers/DownloadProvider/
+From 77349cdf78fc1e7f47e780d3dfd65077b321b73d Mon Sep 17 00:00:00 2001
+From: Henrik Baard <henrik.baard@sonyericsson.com>
+Date: Fri, 17 Dec 2010 15:51:12 +0100
+Subject: [PATCH] Making it possible to style download ui using overlay
+
+Today it is not possible to style the download ui using the
+overlay mechanism. The reason for this is that the download
+ui is missing an application theme.
+
+The solution is to add a DefaultTheme that can be overridden
+using overlay.
+
+Change-Id: I2d01838feb863408e284fd0b558eb0d9c8e50e89
+
+project packages/providers/DrmProvider/
+From 3eba77e06203dc03e496185aa1b08cf9b28e187b Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Tue, 29 Mar 2011 10:59:20 -0700
+Subject: [PATCH] Import revised translations.  DO NOT MERGE
+
+Change-Id: Ibdd3ab22e344534d0b1d5885e12774806fdecc43
+
+project packages/providers/GoogleContactsProvider/
+From 4886c7a0cfba5df74b213b1fc8286c6e3f2ddaa2 Mon Sep 17 00:00:00 2001
+From: Jean-Baptiste Queru <jbq@google.com>
+Date: Mon, 8 Mar 2010 18:05:15 -0800
+Subject: [PATCH] Add an empty CleanSpec.mk
+
+Change-Id: I08bd37d45bfb7da3a7fc8ad0574ef3c257e3dca3
+
+project packages/providers/MediaProvider/
+From ac8521c5f94249a33ad7ba870467904b08904101 Mon Sep 17 00:00:00 2001
+From: Jahrome <jahrome11@gmail.com>
+Date: Fri, 27 May 2011 23:51:19 +0200
+Subject: [PATCH] Add more criteria to look for a suitable image for album
+ cover.
+
+Best match is made against albumart keyword, then any jpg or png image. It
+sometimes lead to pick up the wrong file (back image) as media cover. Added
+criteria to match *cover* and *front* keywords (case insensitive).
+
+project packages/providers/TelephonyProvider/
+From 2ec3e883ed91290a9ff19c73f7ad01227168a81a Mon Sep 17 00:00:00 2001
+From: Lorenzo Colitti <lorenzo@google.com>
+Date: Wed, 29 Dec 2010 15:54:00 -0800
+Subject: [PATCH] Add the protocol column to the carriers table.
+
+Bug: 3333633
+Change-Id: I18c2a6fe9506311439ea3076814d2709eb27c841
+
+project packages/providers/UserDictionaryProvider/
+From d7eb9d4b59640175877a6f53f32b6e3e3d7154e9 Mon Sep 17 00:00:00 2001
+From: Ying Wang <wangying@google.com>
+Date: Wed, 29 Sep 2010 15:27:05 -0700
+Subject: [PATCH] Fix proguard flag file dependency.
+
+Change-Id: I5dee31f40696fbfba2a9b2e07b48cd16f00fac14
+
+project packages/wallpapers/Basic/
+From d15159021e87ff497661a442aecdb2e74c0ac918 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sat, 30 Apr 2011 02:46:22 -0400
+Subject: [PATCH] Merge branch 'gingerbread' of
+ git://android.git.kernel.org/platform/packages/wallpapers/Basic
+ into HEAD
+
+
+project packages/wallpapers/LivePicker/
+From c114657db62c84b3b10c4e7d879d90ca5fc81d20 Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Fri, 18 Mar 2011 15:18:33 -0700
+Subject: [PATCH] Import revised translations.  DO NOT MERGE
+
+Change-Id: Ifd3f8c869047c2f7b5052d60bd5b585d2ff86ae4
+
+project packages/wallpapers/MagicSmoke/
+From d63c7a77ec40a95c9b2c07e13ee30e497c9adb38 Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Mon, 28 Feb 2011 17:09:00 -0500
+Subject: [PATCH] Merge branch 'gingerbread' of
+ git://android.git.kernel.org/platform/packages/wallpapers/MagicSmoke
+ into 233-merge
+
+
+project packages/wallpapers/MusicVisualization/
+From 6288e9d26943ced780fe8339ad9ec2bdbd5fa53d Mon Sep 17 00:00:00 2001
+From: Eric Fischer <enf@google.com>
+Date: Fri, 18 Mar 2011 15:18:40 -0700
+Subject: [PATCH] Import revised translations.  DO NOT MERGE
+
+Change-Id: I6c467b903d5f1a40220d667f0315a2665cf52eca
+
+project prebuilt/
+From 671c1cd3e5c89891cadd615e53484df904ac1810 Mon Sep 17 00:00:00 2001
+From: Xavier Ducrohet <xav@android.com>
+Date: Thu, 24 Feb 2011 14:44:43 -0800
+Subject: [PATCH] Merge "Prebuilts needed by the new LayoutLib. do not merge."
+ into gingerbread
+
+
+project sdk/
+From dee444f860076b07d4b751fa64aba6683b4c377d Mon Sep 17 00:00:00 2001
+From: Brett Chabot <brettchabot@android.com>
+Date: Tue, 3 May 2011 16:04:17 -0700
+Subject: [PATCH] Merge "Merge "Fix emulator GPS support"" into tools_r7
+
+
+project system/bluetooth/
+From 7dc550597f490a67c8d020c727bfbf2d9d212d42 Mon Sep 17 00:00:00 2001
+From: Jaikumar Ganesh <jaikumar@google.com>
+Date: Tue, 19 Oct 2010 10:15:03 -0700
+Subject: [PATCH] Add Parrot car kit (KML_CAN) to the auto pairing blacklist.
+
+Bug: 3110801
+
+Change-Id: I3e85af559cd44d55a682b45606aa9ac1d2eabc74
+
+project system/core/
+From 90a9054adf02081ca7c4aa2aca3f932ee715cdae Mon Sep 17 00:00:00 2001
+From: Tony Layher <layhertony@gmail.com>
+Date: Thu, 2 Jun 2011 13:50:02 -0400
+Subject: [PATCH] init update device perms and max sys props.
+
+* Update to allow any rmnet device permissions vice only rmnet0.
+* Newer devices have more sys props set during operation.  The current
+  limit is 247.  Allow device to set board define to raise max number
+  to 494, double the previous value.
+  This issue/solution was found by hardwick.jim@gmail.com (beavis9k)
+  I am submitting this on his behalf.
+
+Change-Id: If5aa2663c5302e5d576fe7dc7e82ef2650dc3ff8
+
+project system/extras/
+From e9c386c4f8a8741dd40fa486747c35634cce9055 Mon Sep 17 00:00:00 2001
+From: jatin.suri <jatin.suri@gmail.com>
+Date: Wed, 23 Feb 2011 12:18:02 -0500
+Subject: [PATCH] Avoid using _mktemp
+
+Change-Id: I954055269c042dccb0fab48b5cd756040633af70
+
+project system/media/
+From 4c2bc0fd150b0164f9f387214c29143346a92e14 Mon Sep 17 00:00:00 2001
+From: Glenn Kasten <gkasten@google.com>
+Date: Tue, 25 Jan 2011 09:26:11 -0800
+Subject: [PATCH] Bug 3388299 Fix stack buffer overrun
+
+Change-Id: Ie8c525ddee862b32f2055cb89c10a680f0c14f97
+
+project system/netd/
+From cd9511f5c7540ce468fdc8391de7f78e80dca63e Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Tue, 17 May 2011 19:05:24 +0400
+Subject: [PATCH] Merge "Allow devices to use custom USB Controller." into
+ gingerbread
+
+
+project system/vold/
+From 5a3e0df5eeeb53c1f4e00ab4cb6de82af3f276fa Mon Sep 17 00:00:00 2001
+From: Tom Giordano <tomgiordano83@gmail.com>
+Date: Sun, 1 May 2011 00:56:13 +1000
+Subject: [PATCH] vold: correct counting of partitions when NPARTS is not
+ available.
+
+This only effects devices using older kernels (before 2.6.32) which don't implement NPARTS/PARTN uevents.
+
+If an sdcard has multiple paritions and NPARTS/PARTN are not implemented in the kernel vold will only attempt to
+mount the last partition on the card, rather than attempt to mount each until it finds a FAT partition.
+This is a problem as when there are multiple partitions present the last is usually not FAT.
+With this patch vold correctly attempts to mount each partition.
+
+Change-Id: If6fc4f5bbca1839f7a8d97b22bcb555e0e26797d
+
+project system/wlan/ti/
+From a7093465ee7b19b34dfb2b95f06c3eb50ebe1844 Mon Sep 17 00:00:00 2001
+From: nadlabak <pavel@doshaska.net>
+Date: Sun, 13 Feb 2011 23:05:00 +0100
+Subject: [PATCH] first commit, 'optional' tags added
+
+
+project vendor/cyanogen/
+From c54d5fbfbc20a4af07ee8376eaaa3e894724de61 Mon Sep 17 00:00:00 2001
+From: Tanguy Pruvot <tanguy.pruvot@gmail.com>
+Date: Fri, 3 Jun 2011 05:08:48 +0200
+Subject: [PATCH] Merge remote-tracking branch 'remotes/cyanogen/gingerbread'
+ into gingerbread
+
+
+project vendor/qcom/opensource/webkit/
+From 64559a9aa5c954c8e231c36a80f8c7402a83820f Mon Sep 17 00:00:00 2001
+From: Matthew Hui <mhui@codeaurora.org>
+Date: Thu, 3 Mar 2011 17:18:50 -0500
+Subject: [PATCH] qcom-opensource/webkit: slow down TBS on pageload
+
+TBS was too aggressive in pre-rendering that it
+degrades page load and v8 performance.  This patch
+allows the TBS thread to process updates in lower
+priority during page load.
+
+Change-Id: Ic6a1513f3b8a14dc15cc4e0be03481d4521c0698
+
+project vendor/tmobile/apps/ThemeChooser/
+From 5d2e6765e46c4e33dee47b73a14ef7204a4e018f Mon Sep 17 00:00:00 2001
+From: Steve Kondik <shade@chemlab.org>
+Date: Sun, 27 Mar 2011 17:03:47 -0400
+Subject: [PATCH] Merge branch 'master' of
+ git://github.com/tmobile/themes-platform-vendor-tmobile-apps-ThemeChooser
+ into HEAD
+
+
+project vendor/tmobile/libs/com.tmobile.themes/
+From 4c0f151c11b3de7b70f5ef1d67a69501147bf263 Mon Sep 17 00:00:00 2001
+From: Josh Guilfoyle <josh.guilfoyle@t-mobile.com>
+Date: Mon, 28 Mar 2011 14:50:53 -0700
+Subject: [PATCH] Updated ThemeItem documentation.
+
+Fixed the outdated instantiation example and clarified newInstance's
+behaviour.
+
+project vendor/tmobile/products/themes/
+From 671cd64ee2d932c5836942c9cde9bcc70d9d9f25 Mon Sep 17 00:00:00 2001
+From: Josh Guilfoyle <Josh.Guilfoyle@T-Mobile.com>
+Date: Thu, 27 Jan 2011 18:27:50 -0800
+Subject: [PATCH] Localize mdpi,hdpi build config to just theme packages.
+
+Discovered a new method for compiling themes with both and m and hdpi
+assets without affecting the entire build product (see corresponding
+changes in theme packages).
+
+project vendor/tmobile/providers/ThemeManager/
+From 4508d872a0be3c2cdf0c86ac327c69f74b0cd218 Mon Sep 17 00:00:00 2001
+From: Rodney Boleyn <rodney.boleyn@t-mobile.com>
+Date: Tue, 15 Mar 2011 13:48:11 -0700
+Subject: [PATCH] Add support for landscape Theme previews.
+
+CR: Josh Guilfoyle
+
+project vendor/tmobile/themes/Androidian/
+From 7f5e2bb53b4524c29cdee9086e99db739728086e Mon Sep 17 00:00:00 2001
+From: Ed Carrigan <edward.carrigan@t-mobile.com>
+Date: Fri, 25 Feb 2011 15:28:07 -0800
+Subject: [PATCH] Added updated battery icons for 2.3.3.
+
+
+project vendor/tmobile/themes/Cyanbread/
+From 7ab2e8f5bfb2ab3d0090b33e4e8e166a0e16b3e9 Mon Sep 17 00:00:00 2001
+From: ecarrigan <edward.carrigan@t-mobile.com>
+Date: Tue, 22 Mar 2011 11:47:28 -0700
+Subject: [PATCH] Draw the statusbar title gradient.
+
