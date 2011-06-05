@@ -218,7 +218,7 @@
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" remote="github" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="CyanogenMod/android_packages_apps_Calendar" remote="github" />
-  <project path="packages/apps/Camera" name="tpruvot/android_packages_apps_Camera" remote="github" />
+  <project path="packages/apps/Camera" name="CyanogenDefy/android_packages_apps_Camera" remote="github" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
   <project path="packages/apps/CMParts" name="CyanogenMod/android_packages_apps_CMParts" remote="github" />
   <project path="packages/apps/CMStats" name="CyanogenMod/android_packages_apps_CMStats" remote="github" />
@@ -227,7 +227,7 @@
   <project path="packages/apps/CMWimaxSettings" name="CyanogenMod/android_packages_apps_CMWimaxSettings" remote="github" />
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" remote="github" />
   <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" remote="github" />
-  <project path="packages/apps/DSPManager" name="Quarx2k/android_packages_apps_DSPManager" remote="github" revision="gingerbread" />
+  <project path="packages/apps/DSPManager" name="CyanogenDefy/android_packages_apps_DSPManager" remote="github" revision="gingerbread" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" remote="github" />
   <project path="packages/apps/FileManager" name="CyanogenMod/android_packages_apps_FileManager" remote="github" />
   <project path="packages/apps/FM" name="CyanogenMod/android_packages_apps_FM" remote="github" />
@@ -241,7 +241,7 @@
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/Pacman" name="CyanogenMod/android_packages_apps_Pacman" remote="github" />
-  <project path="packages/apps/Phone" name="tpruvot/android_packages_apps_Phone" remote="github" />
+  <project path="packages/apps/Phone" name="CyanogenDefy/android_packages_apps_Phone" remote="github" />
   <project path="packages/apps/Protips" name="CyanogenMod/android_packages_apps_Protips" remote="github" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
@@ -252,7 +252,7 @@
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/Torch" name="CyanogenDefy/android_packages_apps_Torch" remote="github" />
   <project path="packages/apps/VoiceDialer" name="CyanogenMod/android_packages_apps_VoiceDialer" remote="github" />
-  <project path="packages/apps/Usb" name="Quarx2k/android_packages_apps_Usb" remote="github" revision="master" />
+  <project path="packages/apps/Usb" name="CyanogenDefy/android_packages_apps_Usb" remote="github" revision="master" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" remote="github" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
