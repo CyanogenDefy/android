@@ -272,7 +272,7 @@
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="sdk" name="platform/sdk" revision="tools_r7" />
 
-  <project path="system/bluetooth" name="tpruvot/android_system_bluetooth" remote="github" />
+  <project path="system/bluetooth" name="CyanogenDefy/android_system_bluetooth" remote="github" />
   <project path="system/core" name="CyanogenMod/android_system_core" remote="github" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" remote="github" />
   <project path="system/media" name="platform/system/media" />
