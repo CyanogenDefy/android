@@ -192,7 +192,7 @@
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" remote="github" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" remote="github" />
 
-  <project path="frameworks/base" name="tpruvot/android_frameworks_base" remote="github" />
+  <project path="frameworks/base" name="CyanogenDefy/android_frameworks_base" remote="github" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
 
