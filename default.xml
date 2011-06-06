@@ -187,7 +187,7 @@
   <project path="external/webkit" name="CyanogenMod/android_external_webkit" remote="github" />
   <project path="external/wireless-tools" name="CyanogenMod/android_external_wireless-tools" remote="github" />
   <project path="external/wpa_supplicant" name="CyanogenMod/android_external_wpa_supplicant" remote="github" />
-  <project path="external/wpa_supplicant_6" name="CyanogenDefy/android_external_wpa_supplicant_6" remote="github" />
+  <project path="external/wpa_supplicant_6" name="CyanogenMod/android_external_wpa_supplicant_6" remote="github" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" remote="github" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" remote="github" />
