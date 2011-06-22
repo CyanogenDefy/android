@@ -14,6 +14,7 @@ You can do this by using these commands:
     repo start gingerbread .
     (Make your changes and commit)
     repo upload .
+
 Note: "." meaning current directory
 For more help on using this tool, use this command: repo help upload
 

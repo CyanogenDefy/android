@@ -60,8 +60,8 @@
   <project path="device/htc/saga" name="CyanogenMod/android_device_htc_saga" remote="github" />
   <project path="device/htc/speedy" name="CyanogenMod/android_device_htc_speedy" remote="github" />
   <project path="device/htc/supersonic" name="CyanogenMod/android_device_htc_supersonic" remote="github" />
-
   <project path="device/htc/vision" name="CyanogenMod/android_device_htc_vision" remote="github" />
+  <project path="device/htc/vivo" name="CyanogenMod/android_device_htc_vivo" remote="github" />
   <project path="device/lge/vm670" name="CyanogenMod/android_device_lge_vm670" remote="github" />
   <project path="device/lge/p990" name="CyanogenMod/android_device_lge_p990" remote="github" />
   <project path="device/lge/p999" name="CyanogenMod/android_device_lge_p999" remote="github" />
@@ -212,7 +212,6 @@
   <project path="hardware/alsa_sound" name="CyanogenMod/android_hardware_alsa_sound" remote="github" />
   <project path="hardware/ti/omap3" name="CyanogenDefy/android_hardware_ti_omap3" remote="github" />
   <project path="hardware/ti/wlan" name="CyanogenDefy/android_hardware_ti_wlan" remote="github" />
-
   <project path="libcore" name="CyanogenMod/android_libcore" remote="github" />
   <project path="ndk" name="platform/ndk" />
 
@@ -257,8 +256,8 @@
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/Torch" name="CyanogenMod/android_packages_apps_Torch" remote="github" />
+  <project path="packages/apps/Usb" name="CyanogenMod/android_packages_apps_Usb" remote="github" />
   <project path="packages/apps/VoiceDialer" name="CyanogenMod/android_packages_apps_VoiceDialer" remote="github" />
-  <project path="packages/apps/Usb" name="CyanogenMod/android_packages_apps_Usb" remote="github" revision="gingerbread" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" remote="github" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
