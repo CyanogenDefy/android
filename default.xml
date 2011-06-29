@@ -298,8 +298,6 @@
   <project path="vendor/tmobile/themes/Cyanbread" name="themes-platform-vendor-tmobile-themes-Cyanbread" remote="themes" revision="master" />
   <project path="vendor/tmobile/products/themes" name="themes-platform-vendor-tmobile-products-themes" remote="themes" revision="master" />
 
-  <project path="vendor/motorola/jordan" name="CyanogenDefy/android_vendor_motorola_jordan" remote="github" />
-
   <project path="android" name="CyanogenDefy/android" remote="github" />
 
   <project path="external/DroidSSHd" name="tpruvot/android_external_droidsshd" revision="gingerbread" remote="github" />
