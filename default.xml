@@ -72,11 +72,8 @@
   <project path="device/malata/smb_a1011" name="CyanogenMod/android_device_malata_smb_a1011" remote="github" />
   <project path="device/malata/smb_b9701" name="CyanogenMod/android_device_malata_smb_b9701" remote="github" />
 
-  <project path="device/motorola/jordan" name="CyanogenDefy/android_device_motorola_jordan" remote="github" />
-  <project path="vendor/motorola/jordan" name="CyanogenDefy/android_vendor_motorola_jordan" remote="github" />
-
   <project path="device/motorola/droid2" name="CyanogenMod/android_device_motorola_droid2" remote="github" />
-  <project path="device/motorola/jordan" name="CyanogenMod/android_device_motorola_jordan" remote="github" />
+  <project path="device/motorola/jordan" name="CyanogenDefy/android_device_motorola_jordan" remote="github" />
   <project path="device/motorola/morrison" name="CyanogenMod/android_device_motorola_morrison" remote="github" />
   <project path="device/motorola/shadow" name="CyanogenMod/android_device_motorola_shadow" remote="github" />
   <project path="device/motorola/sholes" name="CyanogenMod/android_device_motorola_sholes" remote="github" />
@@ -290,6 +287,7 @@
   <project path="system/wlan/ti" name="CyanogenMod/android_system_wlan_ti" remote="github" />
 
   <project path="vendor/cyanogen" name="CyanogenDefy/android_vendor_cyanogen" remote="github" />
+  <project path="vendor/motorola" name="CyanogenDefy/proprietary_vendor_motorola" remote="github" />
 
   <project path="vendor/qcom/opensource/webkit" name="CyanogenMod/android_vendor_qcom_opensource_webkit" remote="github" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="github" revision="master" />
