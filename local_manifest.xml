@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- This file overrides default manifest, to place in .repo folder -->
+
+<!--
+  <remote name="korg"
+          fetch="http://android.git.kernel.org/"
+          review="review.source.android.com" />
+
+  <remote name="github"
+          fetch="git://github.com/"
+          review="review.cyanogenmod.com" />
+
+  <default revision="gingerbread"
+           remote="korg" />
+-->
+
+  <project path="vendor/htc" name="koush/proprietary_vendor_htc" remote="github" />
+  <project path="vendor/motorola" name="CyanogenDefy/proprietary_vendor_motorola" revision="gingerbread" remote="github" />
+
+  <project path="bootable/recovery" name="CyanogenDefy/android_bootable_recovery" remote="github" />
+
+  <project path="device/motorola/jordan" name="CyanogenDefy/android_device_motorola_jordan" remote="github" />
+
+  <project path="external/busybox" name="CyanogenDefy/android_external_busybox" remote="github" />
+  <project path="external/bootmenu" name="CyanogenDefy/android_external_bootmenu" remote="github" />
+  <project path="external/wireless-tools" name="CyanogenDefy/android_external_wireless-tools" remote="github" />
+
+  <project path="frameworks/base" name="CyanogenDefy/android_frameworks_base" remote="github" />
+  <project path="hardware/ti/omap3" name="CyanogenDefy/android_hardware_ti_omap3" remote="github" />
+  <project path="hardware/ti/wlan" name="CyanogenDefy/android_hardware_ti_wlan" remote="github" />
+
+  <project path="system/bluetooth" name="CyanogenDefy/android_system_bluetooth" remote="github" />
+  <project path="system/core" name="CyanogenDefy/android_system_core" remote="github" />
+
+  <project path="packages/apps/Camera" name="CyanogenDefy/android_packages_apps_Camera" remote="github" />
+  <project path="packages/apps/FM" name="CyanogenDefy/android_packages_apps_FM" remote="github" />
+  <project path="packages/apps/Phone" name="CyanogenDefy/android_packages_apps_Phone" remote="github" />
+  <project path="packages/apps/Settings" name="CyanogenDefy/android_packages_apps_Settings" remote="github" />
+  <project path="packages/apps/Usb" name="CyanogenDefy/android_packages_apps_Usb" remote="github" />
+
+  <project path="external/dropbear" name="tpruvot/android_external_dropbear" remote="github" />
+  <project path="external/DroidSSHd" name="tpruvot/android_external_droidsshd" remote="github" />
+
+  <project path="android" name="CyanogenDefy/android" remote="github" />
+
+  <!-- 
+  2 empty repo to remove these directories for sdk r11 compat
+  <project path="sdk" name="platform/sdk" revision="tools_r11" />
+
+  <project path="sdk/monkeyrunner" name="tpruvot/android_sdk_monkeyrunner" remote="github" />
+  <project path="frameworks/base/core/tests/hosttests" name="tpruvot/empty" remote="github" />
+
+  to check :
+  <remove-project name="sdk/monkeyrunner"/>
+  <remove-project name="frameworks/base/core/tests/hosttests"/>
+  -->
+
+</manifest>
