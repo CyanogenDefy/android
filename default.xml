@@ -9,7 +9,7 @@
            review="review.cyanogenmod.com" />
 
   <default revision="gingerbread"
-           remote="korg" />
+           remote="github" />
 
   <project path="build" name="CyanogenMod/android_build" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
