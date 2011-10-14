@@ -328,6 +328,4 @@
 
   <project path="android" name="CyanogenMod/android" />
 
-  <project path="external/DroidSSHd" name="tpruvot/android_external_droidsshd" revision="gingerbread" />
-
 </manifest>
