@@ -244,7 +244,7 @@
   <project path="hardware/ti/omx" name="CyanogenMod/android_hardware_ti_omx" />
   <project path="hardware/ti/syslink" name="CyanogenMod/android_hardware_ti_syslink" />
   <project path="hardware/ti/tiler" name="CyanogenMod/android_hardware_ti_tiler" />
-  <project path="hardware/ti/wlan" name="CyanogenDefy/android_hardware_ti_wlan" />
+  <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" />
   <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" />
 
   <project path="libcore" name="CyanogenMod/android_libcore" />
