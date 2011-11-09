@@ -271,7 +271,7 @@
   <project path="packages/apps/CMWimaxSettings" name="CyanogenMod/android_packages_apps_CMWimaxSettings" />
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" />
   <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" />
-  <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" />
+  <project path="packages/apps/DSPManager" name="CyanogenDefy/android_packages_apps_DSPManager" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
   <project path="packages/apps/FileManager" name="CyanogenMod/android_packages_apps_FileManager" />
   <project path="packages/apps/FM" name="CyanogenDefy/android_packages_apps_FM" />
