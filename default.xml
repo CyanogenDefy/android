@@ -255,7 +255,7 @@
 
   <project path="packages/apps/AccountsAndSyncSettings" name="CyanogenMod/android_packages_apps_AccountsAndSyncSettings" />
   <project path="packages/apps/AicBootFix" name="CyanogenMod/android_packages_apps_AicBootFix" revision="master"/>
-  <project path="packages/apps/ADWLauncher" name="CyanogenMod/android_packages_apps_ADWLauncher" />
+  <project path="packages/apps/ADWLauncher" name="CyanogenDefy/android_packages_apps_ADWLauncher" />
   <project path="packages/apps/AndroidTerm" name="CyanogenMod/android_packages_apps_AndroidTerm" />
   <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" />
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" />
