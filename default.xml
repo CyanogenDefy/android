@@ -18,10 +18,10 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
-<project path="bionic" name="tpruvot/android_bionic" revision="ics" />
+<project path="bionic" name="tpruvot/android_bionic" />
   <project path="bootable/bootloader/legacy" name="CyanogenMod/android_bootable_bootloader_legacy" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
-<project path="bootable/recovery" name="tpruvot/android_bootable_recovery" revision="ics" />
+<project path="bootable/recovery" name="tpruvot/android_bootable_recovery" />
   <project path="dalvik" name="CyanogenMod/android_dalvik" />
   <project path="development" name="CyanogenMod/android_development" />
   <project path="device/common" name="device/common" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
@@ -45,7 +45,7 @@
   <project path="external/bluetooth/bluez" name="CyanogenMod/android_external_bluetooth_bluez" />
   <project path="external/bluetooth/glib" name="CyanogenMod/android_external_bluetooth_glib" />
   <project path="external/bluetooth/hcidump" name="CyanogenMod/android_external_bluetooth_hcidump" />
-<project path="external/bootmenu" name="MotoMagic/android_external_bootmenu" revision="ics" />
+<project path="external/bootmenu" name="MotoMagic/android_external_bootmenu" />
   <project path="external/bouncycastle" name="CyanogenMod/android_external_bouncycastle" />
   <project path="external/bsdiff" name="CyanogenMod/android_external_bsdiff" />
 <project path="external/busybox" name="MotoMagic/android_external_busybox" />
@@ -180,9 +180,9 @@
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" />
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
-<project path="hardware/ti/omap3" name="CyanogenDefy/android_hardware_ti_omap3-compat" revision="ics" />
+<project path="hardware/ti/omap3" name="CyanogenDefy/android_hardware_ti_omap3-compat" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
-<project path="hardware/ti/wlan" name="CyanogenDefy/android_hardware_ti_wlan" revision="ics" />
+<project path="hardware/ti/wlan" name="CyanogenDefy/android_hardware_ti_wlan" />
   <project path="libcore" name="CyanogenMod/android_libcore" />
   <project path="ndk" name="CyanogenMod/android_ndk" />
 <project path="packages/apps/AndroidTerm" name="tpruvot/android_packages_apps_AndroidTerm" />
@@ -257,7 +257,7 @@
 
 <project path="device/motorola/jordan" name="CyanogenDefy/android_device_motorola_jordan" />
 <project path="device/motorola/common" name="MotoMagic/android_device_motorola_common" />
-<project path="vendor/motorola" name="CyanogenDefy/proprietary_vendor_motorola" revision="ics" />
+<project path="vendor/motorola" name="CyanogenDefy/proprietary_vendor_motorola" />
 
   <project path="android" name="CyanogenMod/android" />
 
