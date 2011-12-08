@@ -5,21 +5,23 @@
            fetch="https://android.googlesource.com/" />
 
   <remote  name="github"
-           fetch="git://github.com/" 
+           fetch="https://github.com/"
            review="review.cyanogenmod.com" />
 
-  <default revision="refs/heads/ics"
+  <default revision="ics"
            remote="github"
            sync-j="4" />
 
-  <project path="build" name="CyanogenMod/android_build">
+<!-- NOTE: FORKED PROJECTS ARE NOT INDENTED -->
+
+<project path="build" name="tpruvot/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
-  <project path="bionic" name="CyanogenMod/android_bionic" />
+<project path="bionic" name="tpruvot/android_bionic" revision="ics" />
   <project path="bootable/bootloader/legacy" name="CyanogenMod/android_bootable_bootloader_legacy" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
-  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
+<project path="bootable/recovery" name="tpruvot/android_bootable_recovery" revision="ics" />
   <project path="dalvik" name="CyanogenMod/android_dalvik" />
   <project path="development" name="CyanogenMod/android_development" />
   <project path="device/common" name="device/common" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
@@ -27,6 +29,7 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
   <project path="device/sample" name="device/sample" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
+  <project path="device/samsung/crespo" name="CyanogenMod/android_device_samsung_crespo" />
   <project path="device/samsung/maguro" name="CyanogenMod/android_device_samsung_maguro" />
   <project path="device/samsung/tuna" name="CyanogenMod/android_device_samsung_tuna" />
   <project path="device/ti/panda" name="device/ti/panda" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
@@ -42,13 +45,13 @@
   <project path="external/bluetooth/bluez" name="CyanogenMod/android_external_bluetooth_bluez" />
   <project path="external/bluetooth/glib" name="CyanogenMod/android_external_bluetooth_glib" />
   <project path="external/bluetooth/hcidump" name="CyanogenMod/android_external_bluetooth_hcidump" />
+<project path="external/bootmenu" name="MotoMagic/android_external_bootmenu" revision="ics" />
   <project path="external/bouncycastle" name="CyanogenMod/android_external_bouncycastle" />
   <project path="external/bsdiff" name="CyanogenMod/android_external_bsdiff" />
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" />
+<project path="external/busybox" name="MotoMagic/android_external_busybox" />
   <project path="external/bzip2" name="CyanogenMod/android_external_bzip2" />
   <project path="external/chromium" name="CyanogenMod/android_external_chromium" />
   <project path="external/clang" name="platform/external/clang" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
-  <project path="external/clearsilver" name="CyanogenMod/android_external_clearsilver" />
   <project path="external/collada" name="platform/external/collada" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
   <project path="external/dbus" name="CyanogenMod/android_external_dbus" />
   <project path="external/dhcpcd" name="CyanogenMod/android_external_dhcpcd" />
@@ -145,7 +148,7 @@
   <project path="external/tremolo" name="CyanogenMod/android_external_tremolo" />
   <project path="external/v8" name="CyanogenMod/android_external_v8" />
   <project path="external/valgrind" name="CyanogenMod/android_external_valgrind" />
-  <project path="external/webkit" name="CyanogenMod/android_external_webkit" />
+<project path="external/webkit" name="tpruvot/android_external_webkit" />
   <project path="external/webp" name="CyanogenMod/android_external_webp" />
   <project path="external/webrtc" name="platform/external/webrtc" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
   <project path="external/wireless-tools" name="CyanogenMod/android_external_wireless-tools" />
@@ -156,7 +159,7 @@
   <project path="external/vim" name="CyanogenMod/android_external_vim" revision="master" />
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" />
+<project path="frameworks/base" name="CyanogenDefy/android_frameworks_base" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" />
@@ -177,11 +180,12 @@
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" />
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
-  <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" />
+<project path="hardware/ti/omap3" name="CyanogenDefy/android_hardware_ti_omap3-compat" revision="ics" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
-  <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" />
+<project path="hardware/ti/wlan" name="CyanogenDefy/android_hardware_ti_wlan" revision="ics" />
   <project path="libcore" name="CyanogenMod/android_libcore" />
   <project path="ndk" name="CyanogenMod/android_ndk" />
+<project path="packages/apps/AndroidTerm" name="tpruvot/android_packages_apps_AndroidTerm" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
   <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" />
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" />
@@ -216,6 +220,7 @@
   <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" />
   <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" />
   <project path="packages/apps/Tag" name="CyanogenMod/android_packages_apps_Tag" />
+<project path="packages/apps/Usb" name="MotoMagic/android_packages_apps_Usb" remote="github" />
   <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
   <project path="packages/apps/VoiceDialer" name="CyanogenMod/android_packages_apps_VoiceDialer" />
   <project path="packages/experimental" name="CyanogenMod/android_packages_experimental" />
@@ -240,15 +245,20 @@
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
   <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" remote="aosp" revision="refs/tags/android-4.0.1_r1" />
   <project path="prebuilt" name="CyanogenMod/android_prebuilt" />
-  <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
+<project path="vendor/cm" name="CyanogenDefy/android_vendor_cm" />
   <project path="sdk" name="CyanogenMod/android_sdk" />
   <project path="system/bluetooth" name="CyanogenMod/android_system_bluetooth" />
-  <project path="system/core" name="CyanogenMod/android_system_core" />
+<project path="system/core" name="tpruvot/android_system_core" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" />
   <project path="system/media" name="CyanogenMod/android_system_media" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" />
   <project path="system/su" name="CyanogenMod/android_system_su" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" />
+<project path="system/vold" name="Quarx2k/android_system_vold" />
+
+<project path="device/motorola/jordan" name="CyanogenDefy/android_device_motorola_jordan" />
+<project path="device/motorola/common" name="MotoMagic/android_device_motorola_common" />
+<project path="vendor/motorola" name="CyanogenDefy/proprietary_vendor_motorola" revision="ics" />
 
   <project path="android" name="CyanogenMod/android" />
+
 </manifest>
