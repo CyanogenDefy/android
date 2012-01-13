@@ -1,4 +1,4 @@
-CyanogenMod 7.1 for Motorola Defy (Android 2.3.4 AOSP)
+CyanogenMod 7.2 for Motorola Defy (Android 2.3.7 AOSP)
 
 
 Download:
@@ -18,11 +18,8 @@ Build:
 
 optional :
     export PLATFORM_DIR=$(pwd)
-    export ARCH=arm
-    export CROSS_COMPILE=arm-eabi-
     export TARGET_OUT_INTERMEDIATES=out
     export JAVA_HOME=/usr/lib/jvm/java-6-sun
-    export BOARD_USES_QCOM_HARDWARE=true
     export PATH=$PLATFORM_DIR/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin:$JAVA_HOME/bin:$PATH
     cd $PLATFORM_DIR
 
@@ -40,6 +37,14 @@ lunch cyanogen_jordan-eng
 mka bacon
 
 use the signed zip to update the defy with Second Init recovery, or CM7 bootmenu recovery, not the ota package
+
+
+Snapshot:
+=========
+If you want to backup the state of your repo for a release you can use this command to create a state file :
+
+repo forall -c 'echo "$REPO_PATH : $REPO_REMOTE/$REPO_PROJECT : $REPO_RREV : $REPO_LREV"' > jordan-rc1-heads.txt
+
 
 Links:
 ======
