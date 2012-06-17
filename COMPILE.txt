@@ -18,7 +18,6 @@ Build:
 
 optional :
     export PLATFORM_DIR=$(pwd)
-    export TARGET_OUT_INTERMEDIATES=out
     export JAVA_HOME=/usr/lib/jvm/java-6-sun
     export PATH=$PLATFORM_DIR/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin:$JAVA_HOME/bin:$PATH
     cd $PLATFORM_DIR
@@ -31,20 +30,19 @@ rm -rf out/target
 
 brunch jordan
 
-or...
+or brunch in two steps :
 
-lunch cyanogen_jordan-eng
+lunch cyanogen_jordan-eng  # (or "breakfast jordan")
 mka bacon
 
-use the signed zip to update the defy with Second Init recovery, or CM7 bootmenu recovery, not the ota package
+use the signed zip to update the defy with Second Init recovery, or CM7 bootmenu recovery, not the ota one
 
 
 Snapshot:
 =========
-If you want to backup the state of your repo for a release you can use this command to create a state file :
+If you want to backup the state of your repo for a release you can use this command to create a manifest file :
 
-repo forall -c 'echo "$REPO_PATH : $REPO_REMOTE/$REPO_PROJECT : $REPO_RREV : $REPO_LREV"' > jordan-rc1-heads.txt
-
+repo manifest -o jordan-7.2.0.xml -r
 
 Links:
 ======
